@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Contact Docs</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/prettify.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+    
+  <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h1 class="modal-title" id="myModalLabel">Need Support?</h1>
+            <p class="modal-title"><strong>We've got your back.</strong></p>
+          </div>
+          <div class="modal-body">
+            <a href="http://themescollective.com/" title="Visit Themes Collective Online" target="_blank"><strong>themescollective.com</strong></a>
+            <p>1. Simply head back to the marketplace where you purchased the theme, and leave a comment in the <strong>theme's comment section</strong>, and a swift response will be given accordingly.</p>
+            <p>2. Alternatively, send an email to <strong>help@themescollective.com</strong> and we'll get back to you the same day. Please add 'Theme Help' to the subject line, and be sure to give the name of the theme you are requesting help with.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="Logo"></a>
+        </div>
+        <nav class="collapse navbar-collapse pull-right" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" title="Setup">Setup</a></li>
+            <li><a href="heros.html" title="Hero's">Hero's</a></li>
+            <li><a href="navigation.html" title="Navigation">Navs</a></li>
+            <li><a href="elements.html" title="Elements">Elements</a></li>
+            <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+            <li style="margin-right: 10px"><a href="contact.html" title="Contact">Contact</a></li>
+            <li><a href="#sec" data-toggle="modal" data-target="#myModal" class="tsupport">Theme Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="masthead">  
+      <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h1>Contact.</h1>
+              <p class="lead">Columbia Theme Usage Guidelines</p>
+              <ul class="bs-docs-mast-links muted">
+                <li>Currently v1.0.3</li>
+                <li>·</li>
+                <li>By Themes Collective</li>
+                <li>·</li>
+                <li data-toggle="modal" data-target="#myModal" style="cursor: pointer">Get Support</li>
+              </ul>
+            </div>
+          </div> 
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div id="leftcol" class="col-md-3">
+          <ul id="sidebar" class="nav nav-stacked">
+            <li class="active"><a href="#contact">1.0 / Contact</a>
+              <ul class="nav">
+                <li><a href="#map">1.01: Google Map</a></li>
+                <li><a href="#cform">1.02: Contact Form</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-9">
+
+          <section id="contact">
+
+            <div id="map">
+              <h2 style="margin-top: 33px">1.01: Google Map</h2>
+              <p>To set the location of the map, you should search the desired address on Google Maps, click &#39;Center Here&#39; and the latitude and longitude parameters should appear in the search box. These figures should be set below, this is how our example looks; <code>center: new google.maps.LatLng(-34.397, 150.644),</code> </p>
+              <p><strong>Example HTML markup:</strong></p>
+<pre class="prettyprint linenums">
+&lt;section class="map noMargin" id="map"&gt;
+  &lt;div id="map-canvas"&gt;&lt;/div&gt;
+&lt;/section&gt;
+</pre>
+<p><strong>Example JS markup:</strong></p>
+<pre class="prettyprint linenums">
+&lt;!-- Initialize Google Maps with api parameters --&gt;
+&lt;script src="https://maps.googleapis.com/maps/api/js?v=3.exp"&gt;&lt;/script&gt;&lt;!-- Our google api script --&gt;
+&lt;script type="text/javascript"&gt;
+(function() {
+"use strict";
+function initialize() {
+
+var mapOptions = {
+center: new google.maps.LatLng(-34.397, 150.644),
+zoom: 8,
+scrollwheel: false,
+draggable: false,
+disableDefaultUI: true
+};
+
+var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+var image = 'img/pointer.png';
+var marker = new google.maps.Marker({
+position: new google.maps.LatLng(-34.397, 150.644),
+clickable: false,
+title: "Our Location",
+icon: image
+});
+
+marker.setMap(map);
+
+var styles = [{
+stylers: [{
+saturation: -100
+}]
+}, {
+featureType: "road",
+elementType: "geometry",
+stylers: [{
+lightness: 100
+}, {
+visibility: "simplified"
+}]
+}, {
+featureType: "road",
+elementType: "labels",
+stylers: [{
+visibility: "off"
+}]
+}];
+
+map.setOptions({
+styles: styles
+});
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+})();
+&lt;/script&gt;
+</pre>
+            </div>
+
+            <hr>
+
+            <div id="cform">
+              <h2>1.01: Contact Form</h2>
+              <p>To configure the correct settings so that emails are sent to your desired address, you will need to amend a few lines via the following:</p>
+              <ol>
+              <li>Go to the <code>includes</code> folder, then open the <code>contact-form</code> folder.</li>
+              <li>Open the <code>contact_me.php</code> file in your favourite text-editor</li>
+              <li>Go to <code>line 17</code> and add your own email address, in the space where it says <code>addyouremailaddress@here.com</code>. Remember to save the file and then close it.</li>
+              <li>Open the other file in the same folder, called <code>contact_me.js</code>.</li>
+              <li>Go to <code>line 48</code> and add your email address again, to where it says <code>me@example.com</code>, <strong>in both places.</strong> Remember to save the file and then close it.</li>
+              <p><strong>Example HTML markup:</strong></p>
+<pre class="prettyprint linenums">
+&lt;!-- ============================ Section Start ============================ --&gt;
+
+&lt;section id="cform" class="container-fluid red-lt"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-lg-5 textpadding"&gt;
+&lt;h3&gt;&lt;span class="icon-location"&gt;&lt;/span&gt; 21 Avenue House, NYC 20051&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="icon-phone"&gt;&lt;/span&gt; 555-343-443&lt;/h3&gt;
+&lt;h3&gt;&lt;span class="icon-bubble2"&gt;&lt;/span&gt; email@address.com&lt;/h3&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;p&gt;Moveth every creepeth second divided itself living. Had over fourth good there deep all lights.&lt;/p&gt;&lt;p&gt;In Also can't moved brought spirit together moving. Gathered i so for and he good bearing also.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-7 textpadding white"&gt;
+
+&lt;form name="sentMessage" class="well" id="contactForm" novalidate&gt;
+
+&lt;div class="control-group wow fadeInUp" data-wow-delay="0.3s"&gt;
+&lt;div class="controls"&gt;
+&lt;input type="text" class="form-control" placeholder="Full Name" id="name" required data-validation-required-message="Enter Name" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="control-group wow fadeInUp" data-wow-delay="0.6s"&gt;
+&lt;div class="controls"&gt;
+&lt;input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Enter Email" /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="control-group wow fadeInUp" data-wow-delay="0.9s"&gt;
+&lt;div class="controls"&gt;
+&lt;textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="5999" style="resize:none"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="success"&gt; &lt;/div&gt; &lt;!-- For success/fail messages --&gt;
+&lt;button type="submit" class="btn btn-primary pull-right"&gt;Send&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============================ Section End ============================== --&gt;
+</pre>
+<p><strong>Essential JS files:</strong></p>
+<pre class="prettyprint linenums">
+&lt;script src="includes/jqBootstrapValidation.js"&gt;&lt;/script&gt;&lt;!-- Form Validation for contact form --&gt;
+&lt;script src="includes/contact-form/contact_me.js"&gt;&lt;/script&gt;&lt;!-- Contact form js --&gt;
+</pre>
+            </div>
+
+            <hr>
+
+          </section><!-- End #contact -->
+
+        </div><!-- End MAIN .col-md-9 -->
+        
+
+      </div>
+    </div>
+
+    <footer class="bs-docs-footer" role="contentinfo">
+      <div class="container">
+
+        <p>Designed and built by <a href="http://themescollective.com/" target="_blank" title="Themes Collective"><strong>Themes Collective</strong></a>.</p>
+        <ul class="bs-docs-footer-links muted">
+          <li>Currently v1.0.3</li>
+          <li>·</li>
+          <li data-toggle="modal" data-target="#myModal" style="cursor: pointer">Get Support</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type='text/javascript' src="assets/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="assets/js/prettify.js"></script>
+    <script type='text/javascript' src="assets/js/scripts.js"></script>
+
+  </body>
+</html>

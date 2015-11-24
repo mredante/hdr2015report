@@ -1,0 +1,236 @@
+body {
+  padding-top: 50px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 26px
+}
+
+body,
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Arial', Helvetica, sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 50px 0 20px 0;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  margin: 30px 0;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 26px
+}
+
+a {
+  cursor: pointer;
+  color: #5D9CEC
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+hr {
+  height: 1px;
+  margin: 50px 0;
+  border: 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.nav>li>a {
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#leftcol .nav>li>a {
+  color: #333;
+  font-size: 15px
+}
+
+#leftcol .nav>li>.nav>li>a {
+  color: #999;
+  line-height: 14px;
+  padding: 5px 0 5px 25px;
+}
+
+#leftcol .nav>li>.nav {
+  padding-top: 10px
+}
+
+ul.nav.navbar-nav {
+  margin-top: 11px
+}
+
+#leftcol .nav>li>a:hover,
+#leftcol .nav>li>a:focus {
+  background-color: transparent;
+}
+
+#leftcol .nav>li:hover,
+#leftcol .nav>li:focus {
+  border-right: 0 solid #EEEEEE;
+}
+
+.navbar-brand {
+  padding: 10px 15px
+}
+
+#masthead {
+  padding: 50px 0 70px;
+  background-color:#F4F4F4;
+  margin-bottom: 40px
+}
+
+#masthead h1 {
+  font-size: 55px;
+  line-height: 1;
+  color: #333
+}
+
+.modal-header {
+  text-align: center;
+}
+
+.modal-title {
+  margin-bottom: 10px
+}
+
+.modal-body {
+  padding: 30px
+}
+
+.modal-body a {
+  text-align: center;
+  display: block;
+  color: #4285F4
+}
+
+/* hide sidebar sub menus by default */
+#sidebar.nav .nav {
+  display: none;
+    font-size:12px;
+}
+
+/* show sub menu when parent is active */
+#sidebar.nav>.active>ul {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 100px;
+  }
+}
+
+.navbar-bright {
+  background-color:#131418;
+  color:#fff;
+}
+  
+.navbar-bright a, #masthead a, #masthead .lead {
+    color:#333;
+}
+
+.lead {
+  font-size: 22px;
+  line-height: 32px;
+  margin: 20px 0 5px;
+  font-weight: bold;
+}
+
+.navbar-bright li > a:hover {
+    background-color:transparent;
+    color: #aaa
+}
+
+.affix-top,.affix{
+  position: static;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;
+  }
+
+  li.support:hover {
+    border: none !important;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+
+#sidebar li.active {
+  border:0 #eee solid;
+}
+
+#leftcol .nav>li>.nav>li {
+  border-right-width: 4px
+}
+
+.nav>li>a.tsupport {
+  background-color: #eee;
+  color: #333;
+  border-radius: 3px
+}
+
+/* Footer */
+
+.bs-docs-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 100px;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.bs-docs-footer p {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: rgb(119, 119, 119);
+}
+
+.bs-docs-mast-links {
+  padding-left: 0;
+  margin-top: 0;
+  color: #999;
+  font-weight: bold;
+}
+
+.bs-docs-footer-links {
+  padding-left: 0;
+  margin-top: 20px;
+  color: #aaa
+}
+
+.bs-docs-mast-links li:first-child,
+.bs-docs-footer-links li:first-child {
+  padding-left: 0;
+}
+
+.bs-docs-mast-links li,
+.bs-docs-footer-links li {
+  display: inline;
+  padding: 0 2px;
+}

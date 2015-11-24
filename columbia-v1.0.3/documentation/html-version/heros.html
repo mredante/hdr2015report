@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Hero Docs</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/prettify.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+    
+  <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h1 class="modal-title" id="myModalLabel">Need Support?</h1>
+            <p class="modal-title"><strong>We've got your back.</strong></p>
+          </div>
+          <div class="modal-body">
+            <a href="http://themescollective.com/" title="Visit Themes Collective Online" target="_blank"><strong>themescollective.com</strong></a>
+            <p>1. Simply head back to the marketplace where you purchased the theme, and leave a comment in the <strong>theme's comment section</strong>, and a swift response will be given accordingly.</p>
+            <p>2. Alternatively, send an email to <strong>help@themescollective.com</strong> and we'll get back to you the same day. Please add 'Theme Help' to the subject line, and be sure to give the name of the theme you are requesting help with.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="Logo"></a>
+        </div>
+        <nav class="collapse navbar-collapse pull-right" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" title="Setup">Setup</a></li>
+            <li><a href="heros.html" title="Hero's">Hero's</a></li>
+            <li><a href="navigation.html" title="Navigation">Navs</a></li>
+            <li><a href="elements.html" title="Elements">Elements</a></li>
+            <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+            <li style="margin-right: 10px"><a href="contact.html" title="Contact">Contact</a></li>
+            <li><a href="#sec" data-toggle="modal" data-target="#myModal" class="tsupport">Theme Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="masthead">  
+      <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h1>Hero's.</h1>
+              <p class="lead">Columbia Theme Usage Guidelines</p>
+              <ul class="bs-docs-mast-links muted">
+                <li>Currently v1.0.3</li>
+                <li>·</li>
+                <li>By Themes Collective</li>
+                <li>·</li>
+                <li data-toggle="modal" data-target="#myModal" style="cursor: pointer">Get Support</li>
+              </ul>
+            </div>
+          </div> 
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div id="leftcol" class="col-md-3">
+          <ul id="sidebar" class="nav nav-stacked">
+            <li class="active"><a href="#usage">1.0 / Usage</a>
+            <li class=""><a href="#heros">2.0 / Hero&#39;s</a>
+              <ul class="nav">
+                <li class=""><a href="#colorhero">2.01: Color Overlay Hero</a></li>
+                <li class=""><a href="#imagehero">2.02: Image Hero</a></li>
+                <li class=""><a href="#videohero">2.03: Video Hero</a></li>
+                <li class=""><a href="#sliderhero">2.04: Slider Hero</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-9">
+
+          <section id="usage">
+            <h2>1.0 / Usage</h2>
+            <p>There are four full-height hero variations for the homepage - these are the sections above-the-fold, or at the top of the web-page.</p>
+            <p><strong>The three types of hero's:</strong></p>
+            <p>index.html - Color overlay with background image.<br>
+            index-iage.html - Image hero<br>
+            index-slider.html - Image slider hero<br>
+            index-video.html - Video background hero</p>
+            <p>To change the overlay color on your hero's, you can choose from any of the background colors defined within the style.css file.</p>
+            <p>To view the available colors, view the framework.html file in your browser, and hover over the colors in the palette to reveal their associated css class.</p>
+            <p><strong>Apply the color to your hero</strong></p>
+            <p>Once you have chosen the the css class of the color overlay for your hero, open up your index.html file and find the 'Section one: hero' comment tag. In this section you should see a div called <code>&lt;div class="overlay red-lt"&gt;&lt;/div&gt;</code>. You'll need to change <code>red-lt</code> to the color of your choice. Save your document and reload in the browser.</p>
+            <p><strong>Full-height hero's</strong></p>
+            <p>To force your hero section to automatically cover the full-height of the browser window, simply give a class called <code>cover</code> to the containing <code>section</code>. See the examples below and notice <code>cover</code> has been defined on all three hero types.
+            <p><strong>Note:</strong> the <code>cover</code> class must me applied to the slide item for the slider hero type, as seen below.</p>
+          </section>
+
+            <hr>
+
+
+            <section id="heros">
+            <div id="colorhero">
+              <h2>2.01: Color Overlay Image Hero</h2>
+              <p><strong>Example HTML markup:</strong></p>
+<pre class="prettyprint linenums">
+&lt;section id="start" class="herofade hero cover element-img" style="background-image: url('img/hero.jpg')"&gt;
+&lt;div class="tagline"&gt;
+&lt;img src="img/logo.png" class="wow fadeInUp" alt="Columbia Logo" data-wow-delay="0.3s"&gt;
+&lt;hr class="mini white central"&gt;
+&lt;h1 class="wow fadeInUp" data-wow-delay="0.5s"&gt;We are a digital design firm with clout.&lt;/h1&gt;
+&lt;p class="wow fadeInUp" data-wow-delay="0.7s"&gt;A subtle, yet powerful template that focuses on the content and the user, delivered flawlessly across mobiles &amp;amp; tablets.&lt;/p&gt;
+&lt;a class="scrollto" href="#two" title="Get Reading"&gt;&lt;span class="icon-arrow-down2"&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;div class="overlay red-lt"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</pre>
+</div>
+
+            <div id="imagehero">
+              <h2>2.02: Image Hero</h2>
+              <p><strong>Example HTML markup:</strong></p>
+<pre class="prettyprint linenums">
+&lt;section id="start" class="herofade hero cover element-img" style="background-image: url('img/hero-image.jpg')"&gt;
+&lt;div class="tagline"&gt;
+&lt;img src="img/logo.png" class="wow fadeInUp" alt="Columbia Logo" data-wow-delay="0.3s"&gt;
+&lt;hr class="mini white central"&gt;
+&lt;h1 class="wow fadeInUp" data-wow-delay="0.5s"&gt;We are a digital design firm with clout.&lt;/h1&gt;
+&lt;p class="wow fadeInUp" data-wow-delay="0.7s"&gt;A subtle, yet powerful template that focuses on the content and the user, delivered flawlessly across mobiles &amp;amp; tablets.&lt;/p&gt;
+&lt;a class="scrollto" href="#two" title="Get Reading"&gt;&lt;span class="icon-arrow-down2"&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</pre>
+</div>
+            </section>
+
+            <hr>
+
+            <div id="videohero">
+              <h2>2.03: Video Hero</h2>
+              <p><strong>Example HTML markup:</strong> Remember to set the url of the video in the JS snippet in the footer, and to set a fallback image on the <code>fallback</code> section for mobiles and tablets.</p>
+<pre class="prettyprint linenums">
+&lt;section id="videohero" class="cover"&gt;
+&lt;!-- Logo --&gt;
+&lt;div class="logo"&gt;
+&lt;img src="img/logo.png" class="wow fadeInUp" alt="Columbia Logo" data-wow-delay="0.2s"&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- Specify background image for graceful fallback for mobiles and tablets --&gt;
+&lt;section id="fallback" class="cover element-img" style="background-image: url('video/mobile-fallback.jpg');"&gt;
+&lt;/section&gt;
+</pre>
+<p><strong>Example JS markup:</strong> This is the necessary JS to place in the footer on your html page. Note the three url's of the desired video, (on your own server), to play in the background of the hero automatically.</p>
+<pre class="prettyprint linenums">
+&lt;script src="js/jquery.fs.wallpaper.js"&gt;&lt;/script&gt;&lt;!-- Video plugin --&gt;
+
+&lt;!-- Initialize background video in hero section, (above the fold) --&gt;
+&lt;script&gt;
+$(document).ready(function() {
+$("#videohero").wallpaper({
+source: {
+mp4: "video/hero.mp4",
+ogg: "video/hero.ogv",
+webm: "video/hero.webm"
+}
+});
+});
+&lt;/script&gt;
+</pre>
+            </div>
+
+            <hr>
+
+            <div id="sliderhero">
+              <h2>2.04: Slider Hero</h2>
+              <p><strong>Example HTML markup:</strong></p>
+              <p>Define the url's to the slide images in the html below. Ensure you include the <code>element-img</code> class to force the images to cover the screen area.</p>
+<pre class="prettyprint linenums">
+&lt;section id="hero-slider" class="carousel slide c-fade" data-ride="carousel"&gt;
+
+&lt;!-- Logo --&gt;
+&lt;div class="logo"&gt;
+&lt;img src="img/logo.png" class="wow fadeInUp" alt="Columbia Logo" data-wow-delay="0.2s"&gt;
+&lt;/div&gt;
+
+&lt;!-- Indicators --&gt;
+&lt;ol class="carousel-indicators"&gt;
+&lt;li data-target="#hero-slider" data-slide-to="0" class="active wow fadeInUp" data-wow-delay="0.2s"&gt;&lt;/li&gt;
+&lt;li data-target="#hero-slider" data-slide-to="1" class="wow fadeInUp" data-wow-delay="0.4s"&gt;&lt;/li&gt;
+&lt;li data-target="#hero-slider" data-slide-to="2" class="wow fadeInUp" data-wow-delay="0.6s"&gt;&lt;/li&gt;
+&lt;li data-target="#hero-slider" data-slide-to="3" class="wow fadeInUp" data-wow-delay="0.8s"&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Wrapper for slides --&gt;
+&lt;div class="carousel-inner"&gt;
+&lt;div class="item active cover element-img" style="background-image: url('img/slider/slide-1.jpg')"&gt;
+&lt;div class="carousel-caption"&gt;
+&lt;h1 class="wow fadeInUp" data-wow-delay="0.4s"&gt;We are a digital design firm with clout.&lt;/h1&gt;
+&lt;hr class="mini white wow fadeInUp" data-wow-delay="0.6s"&gt;
+&lt;p class="wow fadeInUp" data-wow-delay="0.8s"&gt;A subtle, yet powerful template that focuses on the content and the user, delivered flawlessly across mobiles &amp;amp; tablets.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="overlay black"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="item cover element-img" style="background-image: url('img/slider/slide-2.jpg')"&gt;
+&lt;div class="carousel-caption"&gt;
+&lt;h1 class="wow fadeInUp" data-wow-delay="0.2s"&gt;Making waves amoung the industry go pro's.&lt;/h1&gt;
+&lt;hr class="mini white wow fadeInUp" data-wow-delay="0.4s"&gt;
+&lt;p class="wow fadeInUp" data-wow-delay="0.6s"&gt;A subtle, yet powerful template that focuses on the content and the user, delivered flawlessly across mobiles &amp;amp; tablets.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="overlay black"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="item cover element-img" style="background-image: url('img/slider/slide-3.jpg')"&gt;
+&lt;div class="carousel-caption"&gt;
+&lt;h1 class="wow fadeInUp" data-wow-delay="0.2s"&gt;Designing apps for all your needs.&lt;/h1&gt;
+&lt;hr class="mini white wow fadeInUp" data-wow-delay="0.4s"&gt;
+&lt;p class="wow fadeInUp" data-wow-delay="0.6s"&gt;A subtle, yet powerful template that focuses on the content and the user, delivered flawlessly across mobiles &amp;amp; tablets.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="overlay black"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="item cover element-img" style="background-image: url('img/slider/slide-4.jpg')"&gt;
+&lt;div class="carousel-caption"&gt;
+&lt;h1 class="wow fadeInUp" data-wow-delay="0.2s"&gt;We make the world a better place.&lt;/h1&gt;
+&lt;hr class="mini white wow fadeInUp" data-wow-delay="0.4s"&gt;
+&lt;p class="wow fadeInUp" data-wow-delay="0.6s"&gt;A subtle, yet powerful template that focuses on the content and the user, delivered flawlessly across mobiles &amp;amp; tablets.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="overlay black"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Controls --&gt;
+&lt;a class="left carousel-control" href="#hero-slider" data-slide="prev"&gt;
+&lt;span class="icon-arrow-left2"&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class="right carousel-control" href="#hero-slider" data-slide="next"&gt;
+&lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;/section&gt;
+</pre>
+
+<p><strong>Example JS markup:</strong></p>
+<pre class="prettyprint linenums">
+&lt;!-- Initialize Hero Slider --&gt;
+&lt;script&gt;
+$(document).ready(function(){
+$('.carousel').carousel()
+});
+&lt;/script&gt;
+</pre>
+</div>
+
+          </section>
+
+        </div><!-- End MAIN .col-md-9 -->
+        
+
+      </div>
+    </div>
+
+    <footer class="bs-docs-footer" role="contentinfo">
+      <div class="container">
+
+        <p>Designed and built by <a href="http://themescollective.com/" target="_blank" title="Themes Collective"><strong>Themes Collective</strong></a>.</p>
+        <ul class="bs-docs-footer-links muted">
+          <li>Currently v1.0.3</li>
+          <li>·</li>
+          <li data-toggle="modal" data-target="#myModal" style="cursor: pointer">Get Support</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type='text/javascript' src="assets/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="assets/js/prettify.js"></script>
+    <script type='text/javascript' src="assets/js/scripts.js"></script>
+
+  </body>
+</html>

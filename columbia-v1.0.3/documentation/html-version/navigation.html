@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Nav Docs</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/prettify.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+    
+  <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h1 class="modal-title" id="myModalLabel">Need Support?</h1>
+            <p class="modal-title"><strong>We've got your back.</strong></p>
+          </div>
+          <div class="modal-body">
+            <a href="http://themescollective.com/" title="Visit Themes Collective Online" target="_blank"><strong>themescollective.com</strong></a>
+            <p>1. Simply head back to the marketplace where you purchased the theme, and leave a comment in the <strong>theme's comment section</strong>, and a swift response will be given accordingly.</p>
+            <p>2. Alternatively, send an email to <strong>help@themescollective.com</strong> and we'll get back to you the same day. Please add 'Theme Help' to the subject line, and be sure to give the name of the theme you are requesting help with.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="Logo"></a>
+        </div>
+        <nav class="collapse navbar-collapse pull-right" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" title="Setup">Setup</a></li>
+            <li><a href="heros.html" title="Hero's">Hero's</a></li>
+            <li><a href="navigation.html" title="Navigation">Navs</a></li>
+            <li><a href="elements.html" title="Elements">Elements</a></li>
+            <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+            <li style="margin-right: 10px"><a href="contact.html" title="Contact">Contact</a></li>
+            <li><a href="#sec" data-toggle="modal" data-target="#myModal" class="tsupport">Theme Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="masthead">  
+      <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h1>Nav.</h1>
+              <p class="lead">Columbia Theme Usage Guidelines</p>
+              <ul class="bs-docs-mast-links muted">
+                <li>Currently v1.0.3</li>
+                <li>·</li>
+                <li>By Themes Collective</li>
+                <li>·</li>
+                <li data-toggle="modal" data-target="#myModal" style="cursor: pointer">Get Support</li>
+              </ul>
+            </div>
+          </div> 
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div id="leftcol" class="col-md-3">
+          <ul id="sidebar" class="nav nav-stacked">
+            <li class="active"><a href="#navs">1.0 / Navs</a>
+              <ul class="nav">
+                <li><a href="#mainnav">1.01: Main Navigation</a></li>
+                <li><a href="#bulletnav">1.02: Bullet Navigation</a></li>
+                <li><a href="#socialnav">1.03: Social Navigation</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-9">
+
+          <section id="navs">
+
+          <div id="mainnav">
+            <h2>1.01 / Main Navigation</h2>
+            <p>The main theme navigation is held inside a modal window. This modal window must have a <code>div id</code> of <code>menumodal</code>. You can add/remove/amend the actual menu items themselves and their <code>href</code> attributes in the <code>modal-body</code> and associated <code>li</code> items.</p>
+            <p>The <code>flyup</code> and <code>four, six, eight etc...</code> classes should be included for animation purposes. <code>ten</code>, for example, means that item will have a 0.6 second delay until it fly&#39;s up into place upon opening the menu window. The delay options increase in increments of 0.2s, and range from <code>two</code> up to <code>twentyfour</code>. These animation settings are unique to the main menu, and also the social menu. Animations for on-page actions are dealt with differently, and can be found in the <a href="css.html" title="Css">CSS</a> section of this documentation site.</p>
+<pre class="prettyprint linenums">
+&lt;!-- ============================ Main menu, (modal window) ============================ --&gt;
+
+&lt;div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true"&gt;
+
+&lt;!-- Close modal trigger --&gt;
+&lt;button class="toggleclose" data-dismiss="modal" aria-hidden="true"&gt;
+&lt;span class="icon-close"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;div class="explore"&gt;
+&lt;h3&gt;Explore&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;!-- Menu content --&gt;
+&lt;div class="modal-dialog"&gt;
+&lt;div class="modal-content"&gt;
+&lt;div class="modal-header"&gt;
+&lt;!-- Logo for desktops/large screens --&gt;
+&lt;div id="menumodalLabel" class="modal-title"&gt;
+&lt;div class="modallogo"&gt;
+&lt;img src="img/logo.png" alt="Columbia Logo"&gt;
+&lt;/div&gt;
+&lt;div class="modaltagline"&gt;
+&lt;h3&gt;An agency &amp;amp; personal portfolio theme, by Themes Collective.&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="modal-body"&gt;
+&lt;ul class="row"&gt;
+&lt;li class="col-md-4 col-sm-6 flyup two animated fadeInUp"&gt;
+&lt;div class="menubg" style="background-image: url('img/stock1.jpg')"&gt;&lt;/div&gt;
+&lt;a href="index.html" title="Home with Hero Image"&gt;Home&lt;span&gt;Example homepage with standard full-height hero image&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="col-md-4 col-sm-6 flyup four animated fadeInUp"&gt;
+&lt;div class="menubg" style="background-image: url('img/stock2.jpg')"&gt;&lt;/div&gt;
+&lt;a href="index-slider.html" title="Home with Slider Hero"&gt;Home Slider&lt;span&gt;A example homepage with a full-height slider for the hero&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="col-md-4 col-sm-6 flyup six animated fadeInUp"&gt;
+&lt;div class="menubg" style="background-image: url('img/stock3.jpg')"&gt;&lt;/div&gt;
+&lt;a href="index-video.html" title="Home with Video Hero"&gt;Home Video&lt;span&gt;Another homepage example with a full-height Youtube video hero&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="col-md-4 col-sm-6 flyup eight animated fadeInUp"&gt;
+&lt;div class="menubg" style="background-image: url('img/stock4.jpg')"&gt;&lt;/div&gt;
+&lt;a href="portfolio-2col.html" title="Two Col Potfolio Grid"&gt;Two Column Portfolio Grid&lt;span&gt;A two-column grid portfolio to showcase your best work&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="col-md-4 col-sm-6 flyup ten animated fadeInUp"&gt;
+&lt;div class="menubg" style="background-image: url('img/stock5.jpg')"&gt;&lt;/div&gt;
+&lt;a href="portfolio-3col.html" title="Three Col Portfolio Grid"&gt;Three Column Portfolio Grid&lt;span&gt;A three-column grid portfolio to showcase your best work&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="col-md-4 col-sm-6 flyup twelve animated fadeInUp"&gt;
+&lt;div class="menubg" style="background-image: url('img/stock6.jpg')"&gt;&lt;/div&gt;
+&lt;a href="portfolio-sortable.html" title="Sortable Portfolio Grid"&gt;Sortable Portfolio Grid&lt;span&gt;A sortable portfolio, grid style, with filter controls&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="col-md-4 col-sm-6 flyup fourteen animated fadeInUp"&gt;
+&lt;div class="menubg" style="background-image: url('img/stock2.jpg')"&gt;&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Single Portfolio Item"&gt;Single Portfolio Item&lt;span&gt;Example of a single project item page with full project spec&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="col-md-4 col-sm-6 flyup sixteen animated fadeInUp"&gt;
+&lt;div class="menubg" style="background-image: url('img/stock7.jpg')"&gt;&lt;/div&gt;
+&lt;a href="about.html" title="About"&gt;About&lt;span&gt;Give an overview of your company or business about what you do&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="col-md-4 col-sm-6 flyup eighteen animated fadeInUp"&gt;
+&lt;div class="menubg" style="background-image: url('img/stock8.jpg')"&gt;&lt;/div&gt;
+&lt;a href="framework.html" title="Theme Framework"&gt;Theme Framework&lt;span&gt;Contains some nut's &amp;amp; bolts of styled page elements&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="col-md-4 col-sm-6 flyup twenty animated fadeInUp"&gt;
+&lt;div class="menubg" style="background-image: url('img/stock9.jpg')"&gt;&lt;/div&gt;
+&lt;a href="blog.html" title="Blog"&gt;Blog&lt;span&gt;Clean blog layout example&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="col-md-4 col-sm-6 flyup twentytwo animated fadeInUp"&gt;
+&lt;div class="menubg" style="background-image: url('img/stock10.jpg')"&gt;&lt;/div&gt;
+&lt;a href="post.html" title="Single Blog Post"&gt;Blog Post&lt;span&gt;Single blog-post example with large featured image&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="col-md-4 col-sm-6 flyup twentyfour animated fadeInUp"&gt;
+&lt;div class="menubg" style="background-image: url('img/stock11.jpg')"&gt;&lt;/div&gt;
+&lt;a href="contact.html" title="Contact"&gt;Contact with Email Form&lt;span&gt;Contact details with working email form with validation support&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="modal-footer"&gt;
+&lt;h3&gt;Get in Touch&lt;/h3&gt;
+&lt;h4&gt;Studio One, Green Trees Ave, NY 30023&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- ============================ End Main Navigation ==================================== --&gt;
+</pre>
+</div>
+          <hr>
+
+          <div id="bulletnav">
+            <h2>1.02 / Bullet Navigation</h2>
+            <p>The container <code>div</code> of the bullet navigation must have a <code>div id</code> of <code>bullets</code>, and also include the <code>cover</code> class to ensure the bullets are vertically centered.</p>
+            <p>Ensure you include the <code>current-page-item</code> class on the first bullet item.</p>
+            <p>The colors of the bullets are designed to change when scrolling through page content. This means you must add the id&#39;s of the section div&#39;s to the <code>li</code> structure located within <code>nav-bullets</code> div.</p>
+            <p>To make each bullet-point scroll to the desired section of the page, you should include the <code>div id</code> in of the go-to section, in the <code>href</code> of the link, ensuring you specify each go-to div id with a hash tag, as seen below.</p>
+
+<pre class="prettyprint linenums">
+&lt;!-- Bullet navigation --&gt;
+&lt;nav id="bullets" class="cover"&gt;
+&lt;ul&gt;
+&lt;li class="current-page-item"&gt;&lt;a href="#start"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#icons"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#three"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#stats"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#blogfeed"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#testimonials"&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+
+          </div>
+
+          <hr>
+
+          <div id="socialnav">
+            <h2>1.03 / Social Navigation</h2>
+            <p>Like the main navigation, this window is a pop-up modal window. All content for this modal window can be found within <code> &lt;div id="socialmodal"&gt;&lt;/div&gt;</code>. You can add/remove at your discretion. The icons are pulled from the Icomoon icon library that is integrated throughout the theme. The animation options are the same as the main menu.</p>
+
+<pre class="prettyprint linenums">
+&lt;!-- ============================ Social menu, (modal window) ============================ --&gt;
+
+&lt;div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true"&gt;
+
+&lt;!-- Menu Trigger --&gt;
+&lt;button class="toggleclose" data-dismiss="modal" aria-hidden="true"&gt;
+&lt;span class="icon-close"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;div class="explore"&gt;
+&lt;h3&gt;Be Social&lt;/h3&gt;
+&lt;/div&gt;
+
+&lt;div class="modal-dialog"&gt;
+&lt;div class="modal-content"&gt;
+&lt;div class="modal-body"&gt;
+&lt;h3&gt;Connect with Jonathan Ive&lt;/h3&gt;
+&lt;hr class="mini white central"&gt;
+&lt;ul class="socialicons"&gt;
+&lt;li class="flyup four"&gt;&lt;a href="http://twitter.com/" title="Twitter" class="twitter" target="_blank"&gt;&lt;span class="icon-twitter"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li class="flyup six"&gt;&lt;a href="http://dribbble.com/" title="Dribbble" class="dribbble" target="_blank"&gt;&lt;span class="icon-dribbble"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li class="flyup eight"&gt;&lt;a href="http://facebook.com/" title="Facebook" class="facebook" target="_blank"&gt;&lt;span class="icon-facebook"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li class="flyup ten"&gt;&lt;a href="http://instagram.com/" title="Instagram" class="instagram" target="_blank"&gt;&lt;span class="icon-instagram"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li class="flyup twelve"&gt;&lt;a href="http://vimeo.com/" title="Vimeo" class="vimeo" target="_blank"&gt;&lt;span class="icon-vimeo"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- End social menu --&gt;
+</pre>
+
+          </div>
+
+          </section>
+
+        </div><!-- End MAIN .col-md-9 -->
+        
+
+      </div>
+    </div>
+
+    <footer class="bs-docs-footer" role="contentinfo">
+      <div class="container">
+
+        <p>Designed and built by <a href="http://themescollective.com/" target="_blank" title="Themes Collective"><strong>Themes Collective</strong></a>.</p>
+        <ul class="bs-docs-footer-links muted">
+          <li>Currently v1.0.3</li>
+          <li>·</li>
+          <li data-toggle="modal" data-target="#myModal" style="cursor: pointer">Get Support</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type='text/javascript' src="assets/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="assets/js/prettify.js"></script>
+    <script type='text/javascript' src="assets/js/scripts.js"></script>
+
+  </body>
+</html>

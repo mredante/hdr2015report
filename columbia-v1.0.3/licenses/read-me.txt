@@ -1,0 +1,4 @@
+Notes on Licenses for Columbia Theme, by Themes Collective
+=============================================================
+
+The licenses held in this folder, pertain to the relevant third-party scripts used within the creation of our Columbia Template. There will only be a handful of licenses held in this folder - the rest of the licenses are detailed at the top of each .js file in the [root]/js folder of your site. Please see the top of these .js files for licenses for any scripts which are not detailed here.

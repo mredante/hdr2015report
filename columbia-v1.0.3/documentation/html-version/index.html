@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Columbia Documentation</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/prettify.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+    
+  <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h1 class="modal-title" id="myModalLabel">Need Support?</h1>
+            <p class="modal-title"><strong>We've got your back.</strong></p>
+          </div>
+          <div class="modal-body">
+            <a href="http://themescollective.com/" title="Visit Themes Collective Online" target="_blank"><strong>themescollective.com</strong></a>
+            <p>1. Simply head back to the marketplace where you purchased the theme, and leave a comment in the <strong>theme's comment section</strong>, and a swift response will be given accordingly.</p>
+            <p>2. Alternatively, send an email to <strong>help@themescollective.com</strong> and we'll get back to you the same day. Please add 'Theme Help' to the subject line, and be sure to give the name of the theme you are requesting help with.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="Logo"></a>
+        </div>
+        <nav class="collapse navbar-collapse pull-right" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" title="Setup">Setup</a></li>
+            <li><a href="heros.html" title="Hero's">Hero's</a></li>
+            <li><a href="navigation.html" title="Navigation">Navs</a></li>
+            <li><a href="elements.html" title="Elements">Elements</a></li>
+            <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+            <li style="margin-right: 10px"><a href="contact.html" title="Contact">Contact</a></li>
+            <li><a href="#sec" data-toggle="modal" data-target="#myModal" class="tsupport">Theme Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="masthead">  
+      <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h1>Setup.</h1>
+              <p class="lead">Columbia Theme Usage Guidelines</p>
+              <ul class="bs-docs-mast-links muted">
+                <li>Currently v1.0.3</li>
+                <li>·</li>
+                <li>By Themes Collective</li>
+                <li>·</li>
+                <li data-toggle="modal" data-target="#myModal" style="cursor: pointer">Get Support</li>
+              </ul>
+            </div>
+          </div> 
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div id="leftcol" class="col-md-3">
+          <ul id="sidebar" class="nav nav-stacked">
+            <li class="active"><a href="#welcome">1.0 / Welcome</a>
+            <li class=""><a href="#getstarted">2.0 / Getting Started</a>
+              <ul class="nav">
+                <li class=""><a href="#package">2.01: What's in the Box?</a></li>
+                <li class=""><a href="#installation">2.02: Theme Installation</a></li>
+                <li class=""><a href="#logo">2.03: Upload a Logo</a></li>
+                <li class=""><a href="#analytics">2.03: Google Analytics</a></li>
+              </ul>
+            </li>
+            <li class=""><a href="#credits">3.0 / Credits</a>
+          </ul>
+        </div>
+
+        <div class="col-md-9">
+
+          <section id="welcome">
+            <h2 style="margin-top: 33px">1.0 / Welcome!</h2>
+            <p>Thankyou for choosing Themes Collective to get you online in style.</p>
+            <p>We understand not everyone is familiar with editing &amp; modifying websites, so we've written this documentation to help you get the look and feel you're aiming for. If you need help, we'll happily assist you; simply click <strong>Theme Support</strong> option in the menu-bar for info on how best to contact us.</p>
+          </section>
+
+          <hr>
+
+          <section id="getstarted">
+
+          <div id="package">
+            <h2>1.1 / What&#39;s in the Box?</h2>
+            <p>What's folders should be in the download package?
+            <br>
+            <br>
+            Folder/file names:</p>
+            <ul>
+              <li><strong>columbia</strong> - All the files that you should upload to your server which form the theme itself.</li>
+              <li><strong>documentation</strong> - This document, plus a PDF version.</li>
+              <li><strong>fonts</strong> - Copies of any fonts and icon-fonts used, (excluding Google Fonts).</li>
+              <li><strong>licenses</strong> - Details of licenses of third-party open source/MIT scripts.</li>
+              <li><strong>readme.txt (file)</strong> - Read this! It has some useful info.</li>
+              <li><strong>changelog.txt (file)</strong> - The changelog will detail any theme changes after an update.</li>
+            </ul>
+          </div>
+
+          <hr>
+
+          <div id="installation">
+            <h2>2.0 / Theme Installation</h2>
+            <p>Installing the theme is a very simple process, here's how:</p>
+            <ol>
+              <li><strong>Unzip the .zip file</strong>, (columbia-v#-#-#.zip), to your computer.</li>
+              <li><strong>Locate the the folder</strong> called 'columbia' and upload it's contents to the [root] of your web-hosting server.</li>
+              <li><strong>Always keep</strong> your homepage called 'index.html' - do not change it's name.</li>
+              <li><strong>Open &amp; edit</strong> your files in <a href="http://www.sublimetext.com/2" title="Sublime Text 2" target="_blank">Sublime Text 2.</a></li>
+              <li><strong>That's it!</strong> Were you expecting a longer process? Sorry to disappoint.</li>
+            </ol>
+          </div>
+
+          <hr>
+
+          <div id="logo">
+            <h2>1.2 / Changing the Logo</h2>
+            <p>Changing the logo is completed in one basic step. By default, the theme comes with the Columbia branded logo, called <code>logo.png</code>, and is located in the <code>[root]/img/ folder</code>. Simply upload your own logo to the <code>img</code> folder, making sure you still name your new logo as <code>logo.png</code>. You can call it something different, but you will have to change the <code>&lt;img src...</code> of your newly named logo in <strong>all</strong> the .html theme files.</p>
+            <p><strong>Troubleshooting: I've uploaded my new logo, but it's still showing the old one...?</strong></p>
+            <p>Your browser may be caching the previous logo in it's memory. To solve this, you should either clear your browsers' cache/temporary internet files, or alternatively, you can rename your logo.png file to something else, but you will have to change the html code too in all of your theme files.</p>
+            <p><strong>Optimum logo dimensions</strong></p>
+            <code>158px x 32px</code> (pixels)
+            <p><strong>Aligning the mobile logo</strong></p>
+            <p>By default, the logo for mobiles and tablets is absolutely positioned. To align it centrally, you need to minus half the width of the logo in your css, on the <code>.mobile_logo</code> class. For example, the current logo is 158px wide, so on <code>line 306</code> of our style.css file, we say:
+              <br><br><code>margin-left: -79px; /* Minus half the WIDTH of your logo */</code>
+              <p>If you new logo is longer or shorter than this, then simply calculate half of the with, and apply to line 306, (don't forget it's a minus value).</p>
+          </div>
+
+          <hr>
+
+          <div id="analytics">
+            <h2>Google Analytics</h2>
+            <p>We have provided the standard/default analytics tracking code at the bottom of every page. Simply add your account number/ID where it says <code>ADD-NUMBER-HERE</code>, plus your website url where it states <code>ADD-WEBSITE-HERE</code>.</p>
+
+            <p>Having trouble? Not sure what info to enter? Simply go to <a href="http://www.google.com/analytics/" title="Google Analytics" target="_blank">Google Analytics</a> and copy the code that's generated for you and relates specifically to your own site.</p>
+            <div class="alert alert-success" role="alert"><strong>Note: </strong> Code snippet is generated after you have created a new site in the GA dashboard.</div>
+            <p>Here is the full snippet for tracking:</p>
+<pre class="prettyprint linenums">
+  &lt;script&gt;
+      (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+      ga(&#39;create&#39;, &#39;UA-ADD-NUMBER-HERE&#39;, &#39;ADD-WEBSITE-HERE&#39;);
+      ga(&#39;require&#39;, &#39;displayfeatures&#39;);
+      ga(&#39;send&#39;, &#39;pageview&#39;);
+  &lt;/script&gt;
+</pre>
+
+<p><strong>Sign Up</strong> - If you don't already have a Google Analytics account, you sign-up for one <a href="http://www.google.com/analytics/" title="Google Analytics" target="_blank"><strong>here</strong></a> - it's free!</p>
+
+</div>
+
+</section>
+
+          <hr>
+
+          <section id="credits">
+            <h2>2.3 / Credits</h2>
+            <p>The Columbia theme comprises of a number of third-party scripts &amp; resources to make it work so flawlessly. All of these resources are either MIT licensed, Open Source, Creative Commons or GPL and free to use in a commercial environment, providing the original licenses are kept in-tact. These can be found either at the top of the respective individual <code>.js</code>files, or in the <code>[root]/licenses</code> folder.<br><br>In no specific order:</p>
+            <p><strong>Framework</strong></p>
+            <ul>
+              <li><strong>Twitter Bootstrap</strong> - <a href="https://getbootstrap.com/" target="_blank" title="Bootstrap">Columbia's core framework</a></li>
+            </ul>
+            <p><strong>Scripts</strong></p>
+            <ul>
+              <li><strong>jQuery</strong> - <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" target="_blank" title="jQuery">jQuery</a></li>
+              <li><strong>Mix It Up</strong> - <a href="https://mixitup.kunkalabs.com/" target="_blank" title="Mix It Up">Sortable portfolio script</a></li>
+              <li><strong>Google Analytics</strong> - <a href="http://www.google.com/analytics/" target="_blank" title="Google Analytics">Visitor tracking</a></li>
+              <li><strong>CounterUp</strong> - <a href="http://gambit.ph/" target="_blank" title="CounterUp">Data counters</a></li>
+              <li><strong>Fitvids</strong> - <a href="http://daverupert.com" target="_blank" title="Fitvids">Responsive videos</a></li>
+              <li><strong>Wallpaper Video</strong> - <a href="http://formstone.it/components/wallpaper" target="_blank" title="Formstone Wallpaper Video">Background Video Player</a></li>
+              <li><strong>jquery.nav</strong> - <a href="http://github.com/davist11/jQuery-One-Page-Nav" target="_blank" title="Bullet Navigation">Bullet Navigation</a></li>
+              <li><strong>NiceScroll</strong> - <a href="http://areaaperta.com/nicescroll" target="_blank" title="Nice Scroll">Custom scrollbars</a></li>
+              <li><strong>Owl Carousel</strong> - <a href="http://www.owlgraphic.com/owlcarousel/" target="_blank" title="Owl Carousel">Image/content slider</a></li>
+              <li><strong>Wow Animations</strong> - <a href="http://mynameismatthieu.com/WOW/" target="_blank" title="Wow Animations">Viewport animations</a></li>
+              <li><strong>jquery.easing.min</strong> - <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank" title="jQuery Easing">jQuery Easing</a></li>
+              <li><strong>FlexSlider</strong> - <a href="http://www.woothemes.com/flexslider/" target="_blank" title="FlexSlider">Slider for blogfeed</a></li>
+            </ul>
+            <p><strong>Images</strong></p>
+            <ul>
+              <li><strong>Unsplash</strong> - <a href="http://unsplash.com/" target="_blank" title="Unsplash">Stock Images</a></li>
+              <li><strong>Photodune</strong> - <a href="http://photodune.net/item/different-people/3538026" target="_blank" title="Photodune">Example Avatar Images (Not supplied with theme)</a></li>
+            </ul>
+            <p><strong>Video</strong></p>
+            <ul>
+              <li><strong>Youtube</strong> - <a href="http://youtube.com/embed/K0_GCuim9kY" target="_blank" title="Youtube">Example fitvids video</a></li>
+              <li><strong>VideoHive (Hero Video)</strong> - <a href="http://videohive.net/item/using-touch-screen-mobile-phone/6776043" target="_blank" title="VideoHive">Video Hero (Not supplied with theme)</a></li>
+              <li><strong>Block Video Element (About Page)</strong> - <a href="http://videohive.net/item/man-using-computer-at-dusk/7441083" target="_blank" title="VideoHive">Block Element Video (Not supplied with theme)</a></li>
+            </ul>
+          </section>
+
+        </div><!-- End MAIN .col-md-9 -->
+        
+
+      </div>
+    </div>
+
+    <footer class="bs-docs-footer" role="contentinfo">
+      <div class="container">
+
+        <p>Designed and built by <a href="http://themescollective.com/" target="_blank" title="Themes Collective"><strong>Themes Collective</strong></a>.</p>
+        <ul class="bs-docs-footer-links muted">
+          <li>Currently v1.0.3</li>
+          <li>·</li>
+          <li data-toggle="modal" data-target="#myModal" style="cursor: pointer">Get Support</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type='text/javascript' src="assets/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="assets/js/prettify.js"></script>
+    <script type='text/javascript' src="assets/js/scripts.js"></script>
+
+  </body>
+</html>

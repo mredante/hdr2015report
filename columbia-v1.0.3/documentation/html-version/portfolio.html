@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Portfolio Docs</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/prettify.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+    
+  <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h1 class="modal-title" id="myModalLabel">Need Support?</h1>
+            <p class="modal-title"><strong>We've got your back.</strong></p>
+          </div>
+          <div class="modal-body">
+            <a href="http://themescollective.com/" title="Visit Themes Collective Online" target="_blank"><strong>themescollective.com</strong></a>
+            <p>1. Simply head back to the marketplace where you purchased the theme, and leave a comment in the <strong>theme's comment section</strong>, and a swift response will be given accordingly.</p>
+            <p>2. Alternatively, send an email to <strong>help@themescollective.com</strong> and we'll get back to you the same day. Please add 'Theme Help' to the subject line, and be sure to give the name of the theme you are requesting help with.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="Logo"></a>
+        </div>
+        <nav class="collapse navbar-collapse pull-right" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" title="Setup">Setup</a></li>
+            <li><a href="heros.html" title="Hero's">Hero's</a></li>
+            <li><a href="navigation.html" title="Navigation">Navs</a></li>
+            <li><a href="elements.html" title="Elements">Elements</a></li>
+            <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
+            <li style="margin-right: 10px"><a href="contact.html" title="Contact">Contact</a></li>
+            <li><a href="#sec" data-toggle="modal" data-target="#myModal" class="tsupport">Theme Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="masthead">  
+      <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h1>Portfolio.</h1>
+              <p class="lead">Columbia Theme Usage Guidelines</p>
+              <ul class="bs-docs-mast-links muted">
+                <li>Currently v1.0.3</li>
+                <li>·</li>
+                <li>By Themes Collective</li>
+                <li>·</li>
+                <li data-toggle="modal" data-target="#myModal" style="cursor: pointer">Get Support</li>
+              </ul>
+            </div>
+          </div> 
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div id="leftcol" class="col-md-3">
+          <ul id="sidebar" class="nav nav-stacked">
+            <li class="active"><a href="#portfolios">1.0 / Portfolios</a>
+              <ul class="nav">
+                <li><a href="#2col">1.01: 2 Column Portfolio</a></li>
+                <li><a href="#3col">1.02: 3 Column Portfolio</a></li>
+                <li><a href="#sortable">1.03: Sortable Portfolio</a></li>
+                <li><a href="#item">1.04: Single Portfolio Item</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-9">
+
+          <section id="portfolios">
+
+            <div id="2col">
+              <h2>1.01: 2 Column Portfolio</h2>
+              <p>You should follow the markup below for the correct proceedure to produce the sortable portfolio.</p>
+              <p>No JS is needed to produce this type of portfolio.</p>
+              <p><strong>Example HTML markup:</strong></p>
+<pre class="prettyprint linenums">
+&lt;!-- ============================ Section Start ============================ --&gt;
+
+&lt;section id="portfolio-item" class="container-fluid"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-6 nopadding wow fadeInUp" data-wow-delay="0.3s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;Nike Re-design&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;UI/UX Design&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/vc.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-6 nopadding wow fadeInUp" data-wow-delay="0.6s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;eBay eCommerce&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;Web Design&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="title"&gt;&lt;img class="img-responsive" src="img/portfolio/tks.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-6 nopadding wow fadeInUp" data-wow-delay="0.6s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;Airbnb Branding&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;Marketing&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/tx.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-6 nopadding wow fadeInUp" data-wow-delay="0.3s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;Amazon&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;Consultation&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/bk.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-6 nopadding wow fadeInUp" data-wow-delay="0.3s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;Facebook&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;Typography&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/cm.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-6 nopadding wow fadeInUp" data-wow-delay="0.6s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;Twitter API&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;Database Handling&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/ft.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============================ Section End ============================== --&gt;
+</pre>
+            </div>
+
+            <hr>
+
+            <div id="3col">
+              <h2>1.02: 3 Column Portfolio</h2>
+              <p>You should follow the markup below for the correct proceedure to produce the sortable portfolio.</p>
+              <p>No JS is needed to produce this type of portfolio.</p>
+              <p><strong>Example HTML markup:</strong></p>
+<pre class="prettyprint linenums">
+&lt;!-- ============================ Section Start ============================ --&gt;
+
+&lt;section id="portfolio-item" class="container-fluid"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-4 nopadding wow fadeInUp" data-wow-delay="0.3s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;Nike Re-design&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;UI/UX Design&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/vc.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-4 nopadding wow fadeInUp" data-wow-delay="0.6s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;eBay eCommerce&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;Web Design&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/tks.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-4 nopadding wow fadeInUp" data-wow-delay="0.9s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;Twitter API&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;Database Handling&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/tks.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-4 nopadding wow fadeInUp" data-wow-delay="0.3s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;eBay eCommerce&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;Web Design&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="#" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/tx.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-4 nopadding wow fadeInUp" data-wow-delay="0.6s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;Amazon&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;Consultation&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/bk.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-4 nopadding wow fadeInUp" data-wow-delay="0.9s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;Airbnb Branding&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;Marketing&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/bk.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-4 nopadding wow fadeInUp" data-wow-delay="0.3s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;eBay eCommerce&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;Web Design&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/cm.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-4 nopadding wow fadeInUp" data-wow-delay="0.6s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;Airbnb Branding&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;Marketing&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/cm.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-sm-4 nopadding wow fadeInUp" data-wow-delay="0.9s"&gt;
+&lt;div class="titlemeta"&gt;
+&lt;h3&gt;Nike Re-design&lt;/h3&gt;
+&lt;hr class="mini white"&gt;
+&lt;p&gt;UI/UX Design&lt;/p&gt;
+&lt;/div&gt;
+&lt;a href="portfolio-item.html" title="Add Title"&gt;&lt;img class="img-responsive" src="img/portfolio/ft.jpg"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- ============================ Section End ============================== --&gt;
+</pre>
+            </div>
+
+            <hr>
+
+            <div id="sortable">
+              <h2>1.03: Sortable Portfolio</h2>
+              <p>You should follow the markup below for the correct proceedure to produce the sortable portfolio.</p>
+              <p>To configure the correct projects to appear for certain categories, you should focus on the <code>data-filter</code> &amp; the corresponding <code>data-cat</code> attributes.</p> 
+              <p><strong>Example HTML markup:</strong></p>
+<pre class="prettyprint linenums">
+&lt;!-- ============================ Section Start ============================ --&gt;
+
+&lt;section id="projects" class="container-fluid"&gt;
+
+&lt;div class="row"&gt;
+&lt;div class="col-xs-12"&gt;&lt;!-- Titlebar --&gt;
+&lt;div class="container-fluid sortlinks"&gt;
+&lt;ul class="filters" class="clearfix right"&gt;
+&lt;li&gt;&lt;p class="filter active" data-filter="app card icon logo web"&gt;All&lt;/li&gt;
+&lt;li&gt;&lt;p class="filter" data-filter="app"&gt;App&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="filter" data-filter="card"&gt;Card&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="filter" data-filter="icon"&gt;Icon&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="filter" data-filter="logo"&gt;Logo&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p class="filter" data-filter="web"&gt;Web&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span class="icon-flickr"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+
+&lt;div class="projects logo" data-cat="logo"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/logo/5.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects app" data-cat="app"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/app/1.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects web" data-cat="web"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/web/4.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects card" data-cat="card"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/card/1.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects app" data-cat="app"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/app/3.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects card" data-cat="card"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/card/4.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects card" data-cat="card"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/card/5.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects logo" data-cat="logo"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/logo/1.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects app" data-cat="app"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/app/2.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects logo" data-cat="logo"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/logo/4.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects icon" data-cat="icon"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/icon/3.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects card" data-cat="card"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/card/3.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects logo" data-cat="logo"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/logo/2.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects app" data-cat="app"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/app/2.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="projects logo" data-cat="logo"&gt;
+&lt;div class="projects-wrapper"&gt;
+&lt;img src="img/sortable/logo/4.jpg" alt="Add alt tag" /&gt;
+&lt;div class="label"&gt;
+&lt;div class="label-text"&gt;
+&lt;h3&gt;&lt;a href="portfolio-item.html" title="View Item"&gt;Visual Infography &lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="label-bg"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;!-- container --&gt;
+
+&lt;/section&gt;&lt;!-- / .container-fluid --&gt;
+
+&lt;!-- ============================ Section End ============================== --&gt;
+</pre>
+<p><strong>Example JS Markup:</strong></p>
+<pre class="prettyprint linenums">
+&lt;script src="js/jquery.mixitup.min.js"&gt;&lt;/script&gt;&lt;!-- MixItUp plugin - for sortable portfolio --&gt;
+
+&lt;!-- Initialize MixItUp plugin --&gt;
+&lt;script&gt;
+$(function () {
+var filterList = {
+init: function () {
+
+$('#projects').mixitup({
+targetSelector: '.projects',
+filterSelector: '.filter',
+effects: ['fade'],
+easing: 'snap',
+// call the hover effect
+onMixEnd: filterList.hoverEffect()
+});
+
+},
+
+hoverEffect: function () {
+// Hover Effect
+$('#projects .projects').hover(
+function () {
+$(this).find('.label').stop().animate({opacity: 0.8}, 200, 'easeOutQuad');
+$(this).find('.label-text h3').stop().animate({top: 0}, 200, 'easeOutQuad');
+},
+function () {
+$(this).find('.label').stop().animate({opacity: 0}, 200, 'easeInQuad');
+$(this).find('.label-text h3').stop().animate({top: '20px'}, 200, 'easeInQuad');
+}
+);
+}
+
+};
+filterList.init();
+});
+&lt;/script&gt;
+</pre>
+            </div>
+
+            <hr>
+
+            <div id="item">
+              <h2>1.04: Portfolio Item</h2>
+              <p><strong>Owl Carousel/Slider</strong></p>
+              <p>The portfolio slider is produced via the Owl Carousel plugin. The html marup below will produce the core structure of the slider, and you should set your JS settings in the footer of your page, as seen below in the JS example.</p>
+              <p><strong>Example slider HTML markup:</strong></p>
+<pre class="prettyprint linenums">
+&lt;link href="css/owl.carousel.css" rel="stylesheet"&gt;&lt;!-- Call the owl carousel css file in the head of your page --&gt;
+
+&lt;section class="container-fluid slider"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-xs-12 nopadding"&gt;
+&lt;div id="slider"&gt;
+&lt;div class="item"&gt;&lt;img src="img/port-carousel/slide-1.jpg" alt="Slide One"&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;img src="img/port-carousel/slide-2.jpg" alt="Slide Two"&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;img src="img/port-carousel/slide-3.jpg" alt="Slide Three"&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;img src="img/port-carousel/slide-4.jpg" alt="Slide Four"&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;img src="img/port-carousel/slide-5.jpg" alt="Slide Four"&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;img src="img/port-carousel/slide-6.jpg" alt="Slide Four"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</pre>
+<p><strong>Example slider JS markup:</strong></p>
+<pre class="prettyprint linenums">
+&lt;script src="js/owl.carousel.min.js"&gt;&lt;/script&gt;&lt;!-- Call the owl carousel js file in the footer of your page --&gt;
+
+&lt;!-- Initialize Owl carousel/slider with desired settings - see http://owlgraphic.com/owlcarousel/#how-to for more options --&gt;
+&lt;script&gt;
+$("#slider").owlCarousel({
+autoPlay : false,
+stopOnHover : true, //Set AutoPlay to 3 seconds
+items : 2,
+itemsDesktop: [1199,2],
+itemsDesktopSmall: [979,2],
+itemsTablet: [768,2],
+itemsMobile: [479,1],
+rewindNav : false,
+navigation: true,
+pagination: false,
+autoHeight: false,
+navigationText : ['&lt;span class="icon-arrow-left2"&gt;&lt;/span&gt;','&lt;span class="icon-arrow-right2"&gt;&lt;/span&gt;']
+});
+&lt;/script&gt;
+</pre>
+            </div>
+
+            <hr>
+
+          </section><!-- End #portfolios -->
+
+        </div><!-- End MAIN .col-md-9 -->
+        
+
+      </div>
+    </div>
+
+    <footer class="bs-docs-footer" role="contentinfo">
+      <div class="container">
+
+        <p>Designed and built by <a href="http://themescollective.com/" target="_blank" title="Themes Collective"><strong>Themes Collective</strong></a>.</p>
+        <ul class="bs-docs-footer-links muted">
+          <li>Currently v1.0.3</li>
+          <li>·</li>
+          <li data-toggle="modal" data-target="#myModal" style="cursor: pointer">Get Support</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type='text/javascript' src="assets/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="assets/js/prettify.js"></script>
+    <script type='text/javascript' src="assets/js/scripts.js"></script>
+
+  </body>
+</html>
