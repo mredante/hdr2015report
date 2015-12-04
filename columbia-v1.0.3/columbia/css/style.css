@@ -43,7 +43,227 @@
 /********************************************************/
 /* Base Styles                                          */
 /********************************************************/
+/** (1) Browser Reset */
+/********************************************************/
+/* for sidebar                                          */
+/********************************************************/
+ul, nav ul {
+    list-style:none;
+}
 
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ul.list-disc, ul.list-square, ul.list-circle {
+	margin-bottom: 20px;
+}
+
+ul.list-disc {
+	list-style: inside disc;
+}
+
+ul.list-square {
+	list-style: inside square;
+}
+
+ul.list-circle {
+	list-style: inside circle;
+}
+
+/* scrollbar position and size */
+.section-content .rollbar-path-vertical {
+	right: 7px;
+	height: 100%!important;
+	width: 5px;
+}
+
+/* make rollbar expand to the full width, while height is auto */
+.section-content .rollbar-content {
+	width: 100%;
+}
+
+/* sidebar */
+.sidebar, aside {
+	font-size: 11px;
+}
+
+	<a class="social flickr"></a>
+*/
+
+.multitab {
+	position: relative;
+	padding-top: 40px;
+	margin-bottom: 20px;
+}
+
+.multitab .tabnav {
+	position: absolute;
+	background: #fff;
+	background: rgba(255,255,255,0.5);
+	top: 0; 
+	left: 0;
+	width: 100%;
+}
+
+.multitab .tabnav li {
+	float: left;
+	padding: 5px 20px;
+	position: relative;
+}
+
+.multitab .tabnav li.active {
+	border-top: 3px solid #6daad0;
+	background: #fff;
+}
+
+.multitab .tabnav li a {
+	color: #555;
+}
+
+.multitab .tabnav li a:hover,
+.multitab .tabnav li.active a {
+	color: #888;
+}
+
+#sidebar1 {
+	position: fixed;
+	width: 14%;
+	min-width: 146px;
+	max-width: 171px;
+	height: 100%;
+	background: url("../images/stripes.png");
+	text-align: right;
+	z-index: 120;
+}
+
+
+/* min heights for navigation elements (logo, menu, twitter) */
+
+#sidebar1 #logo1 { min-height: 160px; }
+#sidebar1 #nav { min-height: 200px; }
+#sidebar1 #multitab_wrap { min-height: 170px; }
+
+/* site logo */
+
+#logo1 {
+	position: relative;
+	top: 10px;
+	text-align: center;
+	height: 28.3%;
+}
+
+
+/* contact info */
+#contact-me {
+	display: none;
+	font-size: 11px;
+	line-height: 1.3em;
+	color: #888;
+	float: left;
+}
+
+#contact-me a {
+	color: #555;
+}
+
+#contact-me a:hover {
+	color: #888;
+}
+
+/* navigation menu */
+
+#nav {
+	height: 38.3%;
+}
+
+#nav ul {
+	float: left;
+	position: relative;
+	left: 50%;
+	top: 0px;
+}
+
+#nav ul li {
+	font: 20px/1.4em "PT Sans Narrow", "Arial", sans-serif;
+	position: relative;
+	right: 50%;
+}
+
+#nav a {
+	color: #888; 
+}
+
+#nav a[href^="http"]::before {
+	content: "+";
+	display: inherit;
+	margin-right: 5px;
+	color: #ccc;
+}
+
+#nav a:hover, #nav .active  {
+	color: #6daad0;
+}
+
+/* sidebar multitab switcher */
+
+#multitab_wrap {
+	clear: both;
+	position: relative;
+	height: 33.3%;
+}
+
+#multitab_wrap a:hover {
+	color: #6daad0;
+}
+
+
+#multitab_wrap .multitab {
+	position: absolute;
+	width: 100%;
+	bottom: 40px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#multitab_wrap .multitab .tabnav {
+	background: none;
+	float: left;
+	position: relative;
+	left: 50%;
+	margin-bottom: 10px;	
+	width: auto;
+}
+
+#multitab_wrap .multitab .tabnav li {
+	padding: 0;
+	margin: 0 5px;
+	position: relative;
+	left: -50%;
+}
+
+#multitab_wrap .multitab .tabnav li.active {
+	background: none;
+	border: 0;
+}
+
+#multitab_wrap .multitab .tab {
+	position: relative;
+	clear: both;
+	border-top: 1px dashed #dfdfdf;
+	border-bottom: 1px dashed #dfdfdf;
+	padding: 10px;
+	font-size: 12px;
+	text-align: left;
+}
+/********************************************************/
+/* end of sidebar Styles                                          */
+/********************************************************/
 html {
   width: auto;
   overflow-x: hidden;
@@ -252,7 +472,7 @@ a.textlink {
 }
 a:hover,
 a:focus {
-  color: #aaa
+  color: none;
 }
 
 hr {
@@ -326,9 +546,9 @@ ul.list {
 
 ul.list li,
 ol li {
-  margin-bottom: 30px;
-  font-size: 21px;
-  line-height: 30px;
+  margin-bottom: 18px;
+  font-size: 17px;
+  line-height: 21px;
 }
 
 ul {
@@ -442,8 +662,7 @@ iframe {
   left: 50%;
   position: absolute;
   top: 50%;
-  margin-top: -19px; /* Minus half the HEIGHT of your logo */
-  margin-left: -79px; /* Minus half the WIDTH of your logo */
+  margin-top: -33px; /* Minus half the HEIGHT of your logo */
 }
 
 @media (min-width: 769px) {
@@ -626,6 +845,7 @@ a.scrollto {
 
 #menumodal ul li a:hover {
   text-decoration: none;
+  color: none;
 }
 
 #menumodal ul li span {
@@ -794,7 +1014,22 @@ a.scrollto {
   }
 }
 
+.one {
+  -webkit-animation-duration: .4s;
+  -moz-animation-duration: .4s;
+  -ms-animation-duration: .4s;
+  -o-animation-duration: .4s;
+  animation-duration: .4s;
+}
+
 .two {
+  -webkit-animation-duration: .4s;
+  -moz-animation-duration: .4s;
+  -ms-animation-duration: .4s;
+  -o-animation-duration: .4s;
+  animation-duration: .4s;
+}
+.three {
   -webkit-animation-duration: .4s;
   -moz-animation-duration: .4s;
   -ms-animation-duration: .4s;
@@ -810,12 +1045,28 @@ a.scrollto {
   animation-duration: .4s;
 }
 
+.five {
+  -webkit-animation-duration: .4s;
+  -moz-animation-duration: .4s;
+  -ms-animation-duration: .4s;
+  -o-animation-duration: .4s;
+  animation-duration: .4s;
+}
+
 .six {
-  -webkit-animation-duration: .6s;
-  -moz-animation-duration: .6s;
-  -ms-animation-duration: .6s;
-  -o-animation-duration: .6s;
-  animation-duration: .6s;
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  -ms-animation-duration: .5s;
+  -o-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+.annex {
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: .5s;
+  -ms-animation-duration: .5s;
+  -o-animation-duration: .5s;
+  animation-duration: .5s;
 }
 
 .eight {
@@ -904,6 +1155,7 @@ a.scrollto {
   bottom: 0;
   top: 0;
   z-index: 1040;
+  background-image: url(https://s3.amazonaws.com/report.hdr.undp.org/img/nav-bar.jpg);
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -917,6 +1169,7 @@ a.scrollto {
     top: 0;
     width: 100%;
     margin-left: 0;
+    background-image: url(https://s3.amazonaws.com/report.hdr.undp.org/img/nab-bar-mobile.jpg);
     height: 65px
   }
 }
@@ -1125,11 +1378,11 @@ header#pagemeta hr.mini {
 /********************************************************/
 
 #bullets {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 10;
   left: 0;
   display: table;
-  width: 80px;
+  width: 180px;
   z-index: 0;
 }
 #bullets ul {
@@ -1155,14 +1408,13 @@ header#pagemeta hr.mini {
 }
 
 #bullets ul li a {
-  display: block;
+  display:
   position: relative;
   width: 10px;
   height: 10px;
-  background-color: #c0c0c0;
+  background-color: transparent;
   -webkit-border-radius:100%;
   -moz-border-radius: 100%;
-  border-radius:100%;
   text-indent: -9999px;
   -webkit-transition: border .3s linear;
   -moz-transition: border .3s linear;
@@ -1171,19 +1423,19 @@ header#pagemeta hr.mini {
 }
 
 #bullets ul li.current-page-item a{
-    background-color: transparent;
+ color: #6a6a6a
 }
 
 #bullets ul li.current-page-item {
-  border-color: #F26F70
+  color: #6a6a6a
 }
 
 #bullets ul li:hover {
-  border-color: #F26F70
+  color: #F26F70
 }
 
 #bullets ul li:hover a {
-  background-color: transparent;
+  color: #6a6a6a
 }
 
 @media (max-width:768px) {
@@ -1209,10 +1461,16 @@ header#pagemeta hr.mini {
 
 .col-xs-12.element-img {
   min-height: 400px
+  
 }
 
 .textpadding {
   padding: 80px 25px
+}
+
+.textpadding-chapter5 {
+  padding: 10px 20px
+  
 }
 
 @media (min-width: 768px) {
@@ -1898,7 +2156,7 @@ blockquote.bigtext {
 
 .titlebar h3 a:hover,
 .titlebar h3 a span:hover {
-  color: #F26F70;
+  color: none;
   text-decoration: none;
 }
 
@@ -3219,7 +3477,7 @@ footer img:hover {
   background-color: #ccd1d9;
 }
 .btn-default, .btn-default.disabled, .btn-default[disabled] {
-  background-color: #3F3B55
+  background-color: #49b2e3
 }
 .open .dropdown-toggle.btn-default {
   background-color: #ccd1d9;

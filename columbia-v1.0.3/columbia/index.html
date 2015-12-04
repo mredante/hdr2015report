@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><!-- Disable horrible auto-skype for contact numbers in IE -->
-    <meta name="description" content="Add a site description here"><!-- Add your site description -->
-    <meta name="author" content="Add author description here"><!-- Add your author description -->
-    <meta name="keywords" content="add,some,general,keywords,here,about,your,site"><!-- Add sites your keywords -->
+    <meta name="description" content="2015 Human Development Report"><!-- Add your site description -->
+    <meta name="author" content="Human Development Report Office"><!-- Add your author description -->
+    <meta name="keywords" content="hdi,human development, human development index, hdro, undp, 2015 report"><!-- Add sites your keywords -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
 
-    <title>Columbia | An Agency Theme</title><!-- Your page/site title -->
+    <title>2015 Human Development Report</title><!-- Your page/site title -->
 
     <!-- Load Our CSS - Do not alter the load order -->
     <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
     <link href="css/animate.css" rel="stylesheet"><!-- Animatations -->
     <link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
     <link href="css/flexslider.css" rel="stylesheet"><!-- Flexslider styles for #blogfeed -->
+    <link href="css/jquery.fs.wallpaper.css" rel="stylesheet"/><!-- Video css file -->
     <link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
     <link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
 
     <!-- Load our fonts from Google -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif:700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Domine" rel="stylesheet" type="text/css">
 
     <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
     <!--[if IE]>
@@ -57,7 +58,6 @@
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="home">
@@ -66,98 +66,6 @@
     <div class="loadstack">
         <div class="spinner"></div>
     </div>
-
-    <!-- ============================ Main menu, (modal window) ============================ -->
-
-    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
-
-        <!-- Close modal trigger -->
-        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
-            <span class="icon-close"></span>
-        </button>
-        <div class="explore">
-            <h3>Explore</h3>
-        </div>
-
-        <!-- Menu content -->
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <!-- Logo for desktops/large screens -->
-                    <div id="menumodalLabel" class="modal-title">
-                        <div class="modallogo">
-                            <img src="img/logo.png" alt="Columbia Logo">
-                        </div>
-                        <div class="modaltagline">
-                            <h3>An agency &amp; personal portfolio theme, by Themes Collective.</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <ul class="row motion">
-                        <li class="col-md-4 col-sm-6 two">
-                            <div class="menubg" style="background-image: url('img/menu/index.jpg')"></div>
-                            <a href="index.html" title="Home with Color Overlay Hero Image">Color Overlay<span>Example standard full-height hero image with a transparent color overlay</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 four">
-                            <div class="menubg" style="background-image: url('img/menu/image.jpg')"></div>
-                            <a href="index-image.html" title="Home with Hero Image">Home Image<span>Example homepage with standard full-height hero image</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 eight">
-                            <div class="menubg" style="background-image: url('img/menu/video.jpg')"></div>
-                            <a href="index-video.html" title="Home with Video Hero">Home Video<span>Another homepage example with a full-height Youtube video hero</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 six">
-                            <div class="menubg" style="background-image: url('img/menu/slider.jpg')"></div>
-                            <a href="index-slider.html" title="Home with Slider Hero">Home Slider<span>A example homepage with a full-height slider for the hero</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 ten">
-                            <div class="menubg" style="background-image: url('img/menu/2col.jpg')"></div>
-                            <a href="portfolio-2col.html" title="Two Col Potfolio Grid">Two Column Portfolio Grid<span>A two-column grid portfolio to showcase your best work</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 twelve">
-                            <div class="menubg" style="background-image: url('img/menu/3col.jpg')"></div>
-                            <a href="portfolio-3col.html" title="Three Col Portfolio Grid">Three Column Portfolio Grid<span>A three-column grid portfolio to showcase your best work</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 fourteen">
-                            <div class="menubg" style="background-image: url('img/menu/sortable.jpg')"></div>
-                            <a href="portfolio-sortable.html" title="Sortable Portfolio Grid">Sortable Portfolio Grid<span>A sortable portfolio, grid style, with filter controls</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 sixteen">
-                            <div class="menubg" style="background-image: url('img/menu/port-item.jpg')"></div>
-                            <a href="portfolio-item.html" title="Single Portfolio Item">Single Portfolio Item<span>Example of a single project item page with full project spec</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 eighteen">
-                            <div class="menubg" style="background-image: url('img/menu/about.jpg')"></div>
-                            <a href="about.html" title="About">About<span>Give an overview of your company or business about what you do</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 twenty">
-                            <div class="menubg" style="background-image: url('img/menu/framework.jpg')"></div>
-                            <a href="framework.html" title="Theme Framework">Theme Framework<span>Contains some nut's &amp; bolts of styled page elements</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 twentytwo">
-                            <div class="menubg" style="background-image: url('img/menu/blog.jpg')"></div>
-                            <a href="blog.html" title="Blog">Blog<span>Clean blog layout example</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 twentyfour">
-                            <div class="menubg" style="background-image: url('img/menu/post.jpg')"></div>
-                            <a href="post.html" title="Single Blog Post">Blog Post<span>Single blog-post example with large featured image</span></a>
-                        </li>
-                        <li class="col-md-4 col-sm-6 twentyfour">
-                            <div class="menubg" style="background-image: url('img/menu/contact.jpg')"></div>
-                            <a href="contact.html" title="Contact">Contact with Email Form<span>Contact details with working email form with validation support</span></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <h3>Get in Touch</h3>
-                    <h4>Studio One, Green Trees Ave, NY 30023</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ============================ End Main Navigation ==================================== -->
 
     <!-- ============================ Social menu, (modal window) ============================ -->
 
@@ -193,40 +101,30 @@
 
     <!-- ============================ Header/fixed sidebar ============================ -->
 
-    <header id="header">
-        
-        <!-- Main menu toggle -->
-        <button class="toggle this" data-toggle="modal" data-target="#menumodal">
-            <span class="menu-bar bar-1"></span>
-            <span class="menu-bar bar-2"></span>
-            <span class="menu-bar bar-3"></span>
-        </button>
-        
+    <header id="header">        
         <!-- Second logo for mobiles/tablets only. Maximum height of 65px -->
         <div class="mobile_logo">
-            <img src="img/logo.png" alt="Columbia Logo">
+            <img src="img/logo.png" alt="Human Development Report Office">
         </div>
 
         <!-- Bullet navigation -->
         <nav id="bullets" class="cover">
             <ul>
-                <li class="current-page-item"><a href="#start"></a></li>
-                <li><a href="#icons"></a></li>
-                <li><a href="#three"></a></li>
-                <li><a href="#stats"></a></li>
-                <li><a href="#blogfeed"></a></li>
-                <li><a href="#testimonials"></a></li>
+                <li class="current-page-item"><a href="#videohero"></a></li>
+                <li><a href="#one">one</a></li>
+                <li><a href="#two">two</a></li>
+                <li><a href="#three">three</a></li>
+                <li><a href="#four">four</a></li>
+                <li><a href="#five">five</a></li>
+                <li><a href="#six">six</a></li>
+                <li><a href="#annex">annex</a></li>
             </ul>
-        </nav>      
+        </nav>
 
     </header>
-
-    <!-- Social menu toggle - keep outside of header to prevent horrible positioning problem on ipads -->
-    <button class="social" data-toggle="modal" data-target="#socialmodal">
-        <span class="icon-share"></span>
-    </button>
-
+    
     <!-- End header/fixed sidebar -->
+    
 
     <!-- ============================ Start the page content ============================ -->
 
@@ -236,235 +134,125 @@
 
         <!-- ============================ Section one: hero ============================ -->
 
-        <section id="start" class="herofade hero cover element-img" style="background-image: url('img/hero.jpg')">
-            <div class="tagline">
-                <img src="img/logo.png" class="wow fadeInUp" alt="Columbia Logo" data-wow-delay="0.3s">
-                <hr class="mini white central">
-                <h1 class="wow fadeInUp" data-wow-delay="0.5s">We are a digital design firm with clout.</h1>
-                <p class="wow fadeInUp" data-wow-delay="0.7s">A subtle, yet powerful template that focuses on the content and the user, delivered flawlessly across mobiles &amp; tablets.</p>
-                <a class="scrollto" href="#two" title="Get Reading"><span class="icon-arrow-down2"></span></a>
-                <div class="overlay red-lt"></div>
+        <section id="videohero" class="cover">
+            <!-- Logo -->
+            <div class="logo">
+                
             </div>
         </section>
 
-        <!-- ============================ Section two: textblock ============================ -->
-
-        <section id="two" class="container wow fadeInUp scrollreceive" data-wow-delay="0.5s">
-            <div class="row padding">
-                <div class="col-xs-12">
-                    <h3>We are a collaborate company</h3>
-                    <hr class="mini">
-                    <p>Sometime into the expedition, <a href="#" class="textlink" title="link">we stumbled across</a> a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
-                </div>
-            </div>
+        <!-- Specify background image for graceful fallback for mobiles and tablets -->
+        <section id="fallback" class="cover element-img" style="background-image: url('video/mobile-fallback.jpg');">
         </section>
-
-        <!-- ============================ Section three: image and text ============================ -->
-
-        <section class="container-fluid white">
-            <div class="row">
-                <div class="col-md-6 textpadding wow fadeInLeft" data-wow-delay="0.5s">
-                    <h3>We are a collaborate company</h3>
-                    <hr class="mini">
-                    <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
-                </div>
-                <div class="col-md-6 element-img" style="background-image: url('img/collaborate.jpg'); height: 540px"></div>
-            </div>
-        </section>
-
-        <!-- ============================ Section four: services icons ============================ -->
-
-        <section id="icons" class="red-lt">
-            <div class="container padding">
-                <div class="row">
-                    <div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <span class="icon-pie"></span>
-                        <h3>We Push Analytics</h3>
-                    </div>
-                    <div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <span class="icon-bars"></span>
-                        <h3>We Drive Results</h3>
-                    </div>
-                    <div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.9s">
-                        <span class="icon-stats"></span>
-                        <h3>We Pursue Perfection</h3>
-                    </div>
-                    <div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="1.2s">
-                        <span class="icon-stack"></span>
-                        <h3>We Re-invent the Norm</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================ Section five: list-items ============================ -->
-
-        <section id="five" class="container-fluid white">
-            <div class="row">
-                <div class="col-md-6 element-img" style="background-image: url('img/beauty.jpg'); height: 530px"></div>
-                <div class="col-md-6 textpadding wow fadeInLeft" data-wow-delay="0.5s">
-                    <h3>We build things with beauty.</h3>
-                    <hr class="mini">
-                    <ul class="list">
-                        <li><span class="icon-radio-checked"></span> We make things for the web that work, for the client and most importantly for the end user.</li>
-                        <li><span class="icon-radio-checked"></span> We make things for the web that work, for the client and most importantly for the end user.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================ Section six: ordered list-items ============================ -->
-
-        <section id="three" class="red-lt">
-            <div class="container">
-                <div class="row padding">
-                    <div class="col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
-                        <h3><span class="number">01.</span> Systems Config</h3>
-                        <br>
-                        <p>We design and build complex security systems for global corporations.</p>
-                        
-                        <br>
-                    
-                        <h3><span class="number">02.</span> Account Management</h3>
-                        <br>
-                        <p>We design and build complex security systems for global corporations.</p>
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-delay="0.3s">
-                        <h3><span class="number">03.</span> Data Analysis</h3>
-                        <br>
-                        <p>We design and build complex security systems for global corporations.</p>
-                        
-                        <br>
-                    
-                        <h3><span class="number">04.</span> Startup Consultation</h3>
-                        <br>
-                        <p>We design and build complex security systems for global corporations.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================ Section seven: textblock ============================ -->
-
-        <section>
-
-            <div class="container wow fadeInUp" data-wow-delay="0.5s">
-                <div class="row padding">
-                    <div class="col-xs-12">
-                        <p>Sometime into the expedition, <a href="#" class="textlink" title="link">we stumbled across</a> a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ====== Full-width blockquote ======= -->
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <hr class="bq-top">
-                        <blockquote class="bigtext">Sometime into the expedition, we stumbled across a narrow, dark tunnel so we crawled in.</blockquote>
-                        <hr class="bq-bottom">
-                    </div>
-                </div>
-            </div>
-
-            <!-- ======= Image and text ============= -->
-
-            <div class="container">
-                <div class="row padding">
-                    <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
-                        <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
-                    </div>
-                    <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
-                        <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
-                    </div>
-                </div>
-            </div>
-        
-        </section>
-
-        <!-- ============================ Section eight: stats ============================ -->
-
-        <section id="stats" class="element-img" style="background-image: url('img/bookshelf.jpg')">
-            <div class="container padding">
-                <div class="row">
-                    <div class="col-md-3 col-xs-6">
-                        <h3>Clients</h3>
-                        <span class="counter">152</span>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <h3>Staff</h3>
-                        <span class="counter">80</span>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <h3>Offices</h3>
-                        <span class="counter">15</span>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <h3>Awards</h3>
-                        <span class="counter">20</span>
-                    </div>
-                    <div class="overlay white"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================ Section nine: list-items & showreel ============================ -->
+ <!-- ============================ Selim introduction ============================ -->
 
         <section class="container padding">
             <div class="row">
                 <div class="col-xs-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <h3>Ace Customer Support</h3>
-                    <p>Sometime into the expedition, we stumbled across a narrow, dark tunnel - so we crawled in.</p>
+                    <h2>An Introduction from Selim Jahan, Director of the Human Development Report Office and Lead Author of the report</h2>
                 </div>
             </div>
             <br>
-            <div class="row">
-                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5s">
-                    <ul class="list">
-                        <li><span class="icon-radio-checked"></span> We make things for the web that work, for the client and most importantly for the end user.</li>
-                        <li><span class="icon-radio-checked"></span> We make things for the web that work, for the client and most importantly for the end user.</li>
-                    </ul>
-                </div>
-                <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5s">
-                    <ol>
-                        <li>We make things for the web that work, for the client and most importantly for the end user.</li>
-                        <li>We make things for the web that work, for the client and most importantly for the end user.</li>
-                    </ol>
-                </div>
-            </div>
             <br>
             <div class="row fitvids">
                 <div class="col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <iframe width="560" height="315" src="//www.youtube.com/embed/PzjwAAskt4o" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/xQkM6hVynR8" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
 
-        <!-- ============================ Section ten: full-width image ============================ -->
-
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 element-img parallax" style="background-image: url('img/sketch.jpg'); height: 500px">
+        <!-- Chapter 1 -->
+        <section id="one" class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row padding wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-xs-12">
+                    <h2>Chapter 1: Work and human development–analytical links</h2>
+                    <hr class="mini">
+                    <p>Work is intrinsic to human development. From a human development perspective, the notion of work is broader and deeper than that of jobs or employment alone. The jobs framework fails to capture many kinds of work that are important to human development—such as unpaid care work, voluntary work and such creative work such as writing or painting. Through this lens the report identifies ways to strengthen the link between work and human development. <br /><br />
+The interactive visualization below explores the synergetic relationship of work and human development.</p>
+    <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading-accordian">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  Click to Read more <span class="icon-arrow-down2"></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body">
+                Work enhances human development, but some work damages human development and some work puts workers at risk.<br /><br />
+<span class="textlink-positive">When positive</span>, work provides benefits beyond material wealth and fosters community, knowledge, strengthens dignity and inclusion. Nearly a billion workers in agriculture, 450 million entrepreneurs, 80 million workers in health and education, 53 million domestic workers, 970 million voluntary workers contribute to human progress.<br /><br />
+<span class="textlink-negative">When negative</span>, in the form of forced labour, child labour and human trafficking, work can violate human rights, threaten freedom and shatter dignity. An estimated 21 million people are currently in forced labour of whom 14 million (67 percent) were exploited for labour and 4.5 million (22 percent) sexually exploited. There are still 168 million child labourers worldwide. And some work e.g. work in hazardous industries may put workers in risk. There are 30 million workers in mining and their face risks every day.<br /> <br />
+Over the years work has contributed considerably to impressive progress in human development. However the progress has been uneven with significant human deprivations and large human potentials remain unused. <br /> <br />
+The chapter feature special contributions by Kailash Satyarthi, Activist and 2014 Nobel Peace Prize Laureate and Lemayh Gbowee, Peace Activist and 2011 Nobel Peace Prize winner.
+              </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-success btn-block">Download Chapter 1 <img src="img/text-download.png"  alt="Download Chapter 1"></button>
+              </div>
+            </div>
+          </div>
+        </div>
                 </div>
             </div>
         </section>
 
-        <!-- ============================ Section eleven: blockquote ============================ -->
+        <!-- ============================ Chapter 2 begin ============================ -->
+<section id="two" class="container white" data-wow-delay="0.5s">
+            <div class="row padding wow fadeInUp" data-wow-delay="0.5s" style="padding-top: 10px;">
+                <div class="col-xs-12 white">
+                    <h2>Chapter 2: Human development and work: progress and challenges</h2>
+                    <hr class="mini">
+                    <p>Over the past two decades, the world has made major strides in human development. Today, people are living longer, more children are going to school and more people have access to clean water and basic sanitation. <br /><br />
+Since 1990, 2 billion people have been lifted out of low human development, extreme income poverty has been reduced by more than a billion. Every region of the world has seen Human Development Index (HDI) gains. <br /><br />The chapter features special contribution by Orhan Pamuk, Novelist, academic and recipient of the 2006 Nobel Prize in Literature.<br /><br />
+Interactive visualization below explores changes in HDI and its components on country, region and global levels. 
+</p>
+    <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading-accordian">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  Click to Read more <span class="icon-arrow-down2"></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                The human progress has been contributed to by the work of nearly 1 billion people in agriculture, the contributions of 80 million workers in health and education, the creativity of 450 million entrepreneurs and the support of 53 million of domestic workers.<br /><br />
+At the same time, human progress has been uneven with deep human deprivations. And significant human potential remains unused, misused and abused. More than 200 million people with 74 million young people are out of work, more than 800 million working poor are living on less than $2 a day.<br /><br />
+Overcoming the existing human deprivations and addressing the emerging human development challenges will require optimal use of the world’s human potential.<br /><br /> 
+The chapter features special contribution by Robert Reich, Former United States Secretary of Labor. 
 
-        <section class="container-fluid white padding">
-            <div class="row">
-                <div class="col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-                    <blockquote class="bigtext">We were startled by her beauty, and stood in ore at her glowing radiance.</blockquote>
+              </div>
+                          <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-success btn-block">Download Chapter 2 <img src="img/text-download.png"  alt="Download Chapter 2"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+                </div>
+            </div>
+        </section>
+        
+<!-- ============================ Chapter 2 end ============================ -->        
+<!-- ============================ Chapter 3  header begin ============================ -->
+
+        <section id="three" class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row padding">
+                <div class="col-xs-12 centertext">
+                    <h2>Chapter 3: The changing world of work
+</h2>
+                    <hr class="title">
+                    <p>Today, the transformation of work is driven by globalization and technological revolutions, particularly the digital revolution. Globalization has fostered global interdependence, with major impacts on patterns of trade, investment, growth and job creation and destruction—as well as on networks for creative and volunteer work. We seem to be living through new and accelerated technological revolutions. New opportunities are emerging, but so do new risks. In this new world of work there are winners, so are losers and human development impacts mixed.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ============================ Section twelve: blog roll ============================ -->
+<!-- ============================ Chapter 3 Header End ============================== -->
 
+<!-- ============================ Chapter 3 slider Start ============================ -->
         <section id="blogfeed" class="container-fluid light-grey-lt">
             <div class="modtitle">
-                <h3>Recent Articles</h3>
+                <h3>Sample text</h3>
             </div>
             <div class="direction controls">
                 <a href="prev" class="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
@@ -478,19 +266,17 @@
                                 <div class="col-md-6 col-sm-12">
                                     <div class="flat-box">
                                         <div class="slideimg">
-                                            <a href="post.html" title="Add Title"><img src="img/blogfeed/post-01.jpg" alt="Add alt tag"></a>
+                                            <img src="img/blogfeed/post-01.png" alt="Add alt tag"></a>
                                         </div>
-                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">Another post, how about a a high-five</a></h3>
-                                        <p class="blogroll-meta">Posted: June 2014, in Design News</p>
+                                        <p class="blogroll-meta">In the past 10 years global trade in goods and services almost doubled—reaching nearly $24 trillion in 2014, up from $13 trillion in 2005. The digital components of these flows have also been increasing. By the end of 2015 the planet will have more than 7 billion mobile subscriptions and more than 3 billion Internet users.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
                                     <div class="flat-box">
                                         <div class="slideimg">
-                                            <a href="post.html" title="Add Title"><img src="img/blogfeed/post-02.jpg" alt="Add alt tag"></a>
+                                            <img src="img/blogfeed/post-02.png" alt="Add alt tag"></a>
                                         </div>
-                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">Another post, how about a a high-five</a></h3>
-                                        <p class="blogroll-meta">Posted: June 2014, in Design News</p>
+                                        <p class="blogroll-meta">The digital components of these flows have also been increasing. By the end of 2015 the planet will have more than 7 billion mobile subscriptions and more than 3 billion Internet users.</p>
                                     </div>
                                 </div>
                             </li>
@@ -498,16 +284,15 @@
                                 <div class="col-md-6 col-sm-12">
                                     <div class="flat-box">
                                         <div class="slideimg">
-                                            <a href="post.html" title="Add Title"><img src="img/blogfeed/post-03.jpg" alt="Add alt tag"></a>
+                                           <img src="img/blogfeed/post-03.png" alt="Add alt tag"></a>
                                         </div>
-                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">An awesome blog post title</a></h3>
-                                        <p class="blogroll-meta">Posted: June 2014, in Design News</p>
+                                        <p class="blogroll-meta">An implied promise of the digital revolution was increased labour productivity, and higher pay. This does not seem to have happened. Productivity has not grown at the rates expected, and the gains have not translated into higher wages for the most part. As a result, inequalities among different [segments] of the society have gone up.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
                                     <div class="flat-box">
                                         <div class="slideimg">
-                                            <a href="post.html" title="Add Title"><img src="img/blogfeed/post-04.jpg" alt="Add alt tag"></a>
+                                        <img src="img/blogfeed/post-04.png" alt="Add alt tag"></a>
                                         </div>
                                         <h3 class="slidetitle"><a href="post.html" title="Post Title">How about another post title then</a></h3>
                                         <p class="blogroll-meta">Posted: June 2014, in Design News</p>
@@ -536,6 +321,215 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-success btn-block">Download Chapter 3 <img src="img/text-download.png"  alt="Download Chapter 3"></button>
+              </div>
+
+        </section>
+     
+
+
+<!-- ============================ Chapter 3 section END ============================== -->
+
+        <section id="four" class="white">
+            <!-- ====== Full-width blockquote - Chapter 4 ======= -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        
+                        <blockquote class="bigtext">Chapter 4: Imbalances in paid and unpaid work
+</blockquote>
+                        <hr class="bq-bottom">
+                    </div>
+                </div>
+            </div>
+
+    <!-- ======= text ============= -->
+
+            <div class="container">
+                <div class="row padding">
+                    <div class="col-md-12 wow fadeInLeft" data-wow-delay="0.3s">
+                        <p>In 2015 the global labour force participation rate was 50 percent for women but 77 percent for men. Worldwide in 2015, 72 percent of working-age men were employed, compared with only 47 percent of women. Female participation in the labour force and employment rates are heavily affected by economic, social and cultural issues and care work distributions at home.<br /><br />Analyses of total hours worked in time-use surveys (in a sample representing 69 percent of the global adult population), shows that women contribute 52 percent of global work to men’s 48 percent. Even though, women carry out the major share of global work, they face disadvantage in the world of work, both in paid and unpaid work. Interactive visualization below explores imbalances in paid and unpaid work using the time-use survey data from 63 countries.<br /></p>
+                </div>
+                </div>
+            <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading-accordian">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                 Click to Read more <span class="icon-arrow-down2"></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                Men dominate the world of paid work, women the world of unpaid work. Of the 59 percent of work that is paid, mostly outside the home, men’s share is nearly twice that of women—38 percent versus 21 percent. The picture is reversed for unpaid work, mostly within the home and encompassing a range of care responsibilities: of the 41 percent of work that is unpaid, women perform three times more than men—31 percent versus 10 percent. <br /><br />
+In the realm of paid work, women are engaged in the workforce less than men, their work tends to be more vulnerable (globally half of employed women are in vulnerable jobs) and they are under-represented in senior management (in businesses, women represent only 22 percent of senior managers.), reinforcing disadvantages. In the realm of unpaid work, women share more of the care burden (undertaking more childcare, care for elders and those with disabilities), which limits their options, discretionary free time and access to social pensions. <br /><br />
+The report calls for reducing the burden of unpaid care work, expanding opportunities for women to engage in paid work. Outcomes could be improved by equal pay, flexible work, greater social protection, parental leave and addressing harassment and social norms that exclude women from work. There is also a need for valuing unpaid care work for advocacy and policy purposes.<br /><br />
+The chapter features special contribution by Roza Otunbayeva, Former President of Kyrgyzstan.  <br />
+              </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-success btn-block">Download Chapter 4 <img src="img/text-download.png"  alt="Download Chapter 4"></button><br />
+              </div>
+            </div>
+          </div>
+        </div>                         
+            </div>
+ 
+        </section>
+                <!-- Chapter 5 -->
+        <section id="five" class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row padding">
+                <div class="col-xs-12">
+                    <blockquote class="bigtext">Chapter 5: Moving to sustainable work</blockquote>
+                    <hr class="mini">
+                    <p>Sustainable work refers to work that promotes human development while ensuring sustainability. It is critical not only for sustaining the planet, but also for ensuring work for future generations. <br /><br />
+Some occupations can be expected to loom larger—railway technicians, for instance, as countries invest in mass transit systems. Terminated workers may predominate in sectors that draw heavily on natural resources or emit greenhouse gases or other pollutants. About 50 million people are employed globally in such sectors (7 million in coal mining, for example). <br /><br />
+For sustainable work to become more widely prevalent, three developments are needed in parallel: termination, transformation and creation, each requiring specific actions by national and international policymakers, industry and other private sector actors, civil society and individuals.<br /><br />
+Infographic below explains effects of work on environmental sustainability and human development.</p>
+        <!-- =============== Chapter 5: 2 column - Graph w/ explanation ===================== -->
+
+        <section id="five" class="container-fluid white">
+            <div class="row white">
+                <div class="col-md-6 element-img" style="background-image: url('img/chapter5.jpg'); height: 500px"></div>
+                <div class="col-md-6 textpadding-chapter5 wow fadeInLeft" data-wow-delay="0.5s">
+                    <h4>Sustainable work (in the top-right square of the matrix in the infographic) takes place in developed and developing economies, but it can differ in scale, in the conditions of work, in the links to human development and in the implications for policy.</h4>
+                    <hr class="mini">
+                    <ul class="list">
+                        <li><span class="icon-radio-checked blogroll-meta"></span> <i>Termination</i>. Some existing work will have to end, and the workers displaced will need to be accommodated in other occupations (bottom-left square of the matrix in the infographic).</li>
+                        <li><span class="icon-radio-checked blogroll-meta"></span> <i>Transformation</i>. Some existing work will need to be transformed in order to be preserved through a combination of investment in adaptable new technologies and retraining or skill upgrading (top-left and bottom-right).</li>
+                        <li><span class="icon-radio-checked blogroll-meta"></span> <i>Creation</i>. Some work will be largely novel, benefiting both sustainability and human development, but will emerge from outside the current set of occupations (top-right square of the matrix in the infographic).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+<br />
+    <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+            <div class="panel-heading-accordian">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                  Click to Read more <span class="icon-arrow-down2">
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+              <div class="panel-body">
+               The Sustainable Development Goals (SDGs) have implications for sustainable work and sustainable work is also critical for achieving the SDGs. SDG with the most direct implications for sustainable work is goal 8 (promote sustained, inclusive and sustainable economic growth, full and productive employment, and decent work for all), and its associated targets which spell out some of the implications for sustainable work. <br /><br />
+Target 8.7, for example, is to take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including the recruitment and use of child soldiers, and by 2025 end child labour in all its forms. <br /><br />
+Target 8.8—to protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment—aims to strengthen the human development outcomes of workers, avoiding a race to the bottom. <br /><br />
+Similarly, sustainable work is also crucial for achieving the SDGs as it contributes to poverty elimination, ending hunger,  promoting sustained, inclusive and sustainable economic growth and so on.  
+The chapter features special contributions by Maithripala Sirisena, President of Sri Lanka and Nohra<br /><br /> Padilla, Director of the National Association of Recyclers (Colombia) and of the Association of Recyclers of Bogota, Recipient of the Goldman Environmental Prize in 2013. <br />
+
+              </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-success btn-block">Download Chapter 5 <img src="img/text-download.png"  alt="Download Chapter 5"></button>
+              </div> <br />
+                </div>
+          </div>
+        </div>
+                </div>
+
+            </div>
+
+        </section>
+            <!-- ====== Chapter 6 ======= -->
+        <section id="six" class="white">
+            <div class="container-fluid white">
+                <div class="row white">
+                    <div class="col-xs-12 white">
+                        
+                        <blockquote class="bigtext" style="padding-top: 30px;">Chapter 6: Imbalances in paid and unpaid work
+</blockquote>
+                        <hr class="bq-bottom">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======= Image and text ============= -->
+
+            <div class="container white">
+                <div class="row padding white">
+                    <div class="col-md-12 wow fadeInLeft white" data-wow-delay="0.3s">
+                        <p>Policy options for enhancing human development through work have to be built around three broad clusters: (1) creating more work opportunities to expand work choices, (2) ensuring workers’ well-being to reinforce a positive link between work and human development and (3) targeted actions to address the challenges of specific groups and contexts. An agenda for action to build momentum for change is also needed pursuing a three-pillar approach—a New Social Contract, a Global Deal and the Decent Work Agenda. <br /><br />
+The Interactive visualization below explores clusters of policy recommendations.
+ </p>
+                    </div>
+                </div>
+            <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading-accordian">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                  Click to Read more <span class="icon-arrow-down2"></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse">
+              <div class="panel-body">
+                Societies can turn challenges caused by changes in the world of work into opportunities that would enhance human development. The report recommends work which enables people to find employment opportunities without damaging prospects for future generations. The report suggests investing in energy efficient technologies, prioritising ethical consumption and investment and enhancing skills development, creativity, entrepreneurship and problem solving among a workforce. The Report also calls for national employment strategies, dual targeting by central banks, employment-led growth rather growth-lead growth strategies, a living income and profit sharing by workers.<br /><br />
+The chapter features special contribution by Benigno S. Aquino III, President of the Philippines. 
+  <br />
+
+              </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+        <button type="button" class="btn btn-success btn-block">Download Chapter 6 <img src="img/text-download.png"  alt="Download Chapter 6"></button><br />
+              </div>
+            </div>
+
+          </div>
+        </div>
+            </div>
+        
+        </section>
+<!-- ============================ Satistical annex begin ============================ -->
+
+        <section id="annex" class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div class="row padding">
+                <div class="col-xs-12">
+                    <h2 class="centertext">Statistical annex
+</h2>
+                    <hr class="title">
+                    <p>The report features 16 statistical tables in the annex as well as the statistical tables following chapters 2, 4 and 6 provide an overview of key aspects of human development. The first seven tables contain the family of composite human development indices and their components estimated by the HDRO. The remaining tables present a broader set of indicators related to human development.<br /><br />
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-info btn-block">Statistical Tables</button>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-warning btn-block">Technical Notes</button>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <button type="button" class="btn btn-default btn-block">FAQ's</button>
+              </div>
+            </div>
+<br />
+Unless otherwise specified in the notes, tables use data available to the HDRO as of 15 April 2015. All indices and indicators, along with technical notes on the calculation of composite indices and additional source information, are available online at <a href="http://hdr.undp.org/en/data">http://hdr.undp.org/en/data</a>.<br /><br />
+Countries and territories are ranked by 2014 Human Development Index (HDI) value. Robustness and reliability analysis has shown that for most countries the differences in HDI are not statistically significant at the fourth decimal place. For this reason countries with the same HDI value at three decimal places are listed with tied ranks.<br />
+</p>
+                </div>
+            </div>
+        </section>
+
+<!-- ============================ Statistical annex End ============================== -->
+
+        <!-- ============================ Section ten: full-width image ============================ -->
+
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 element-img" style="background-image: url('img/sketch.jpg'); height: 500px">
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ Section eleven: blockquote ============================ -->
+
+        <section class="container-fluid white padding">
+            <div class="row">
+                <div class="col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <blockquote class="bigtext">We were startled by her beauty, and stood in ore at her glowing radiance.</blockquote>
                 </div>
             </div>
         </section>
@@ -678,7 +672,7 @@
                                             <img class="img-circle" src="img/testo-3.jpg" alt="Person Three">
                                         </div>
                                         <div class="col-sm-9">
-                                            <p>Appear created face saying winged third itself. Grass for without above image fruit kind the so give replenish saying saying place cattle.</p>
+                                            <p>Appear created face saying winged third itself. Grass for without above image fruit kind the so give replenish saying saying place cattle. Be him for above shall, shall without so for replenish. Evening, for saw the creature give good. I.</p>
                                             <small>Someone famous</small>
                                         </div>
                                     </div>
@@ -736,9 +730,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <a href="index.html" title="Columbia"><img src="img/f-logo.png" alt="Add alt tag"></a>
-                        <p>Believe in what you know</p>
-                        <small>&copy; Copyright 2014 Themes Collective. All rights reserved.</small>
+                        <a href="http://hdr.undp.org/en" title="Human Development Report Office"><img src="img/f-logo.png" ></a>
+                        <p>"Work for Human Development"</p>
+                        <small>&copy; Copyright 2015 HDRO</small>
                         <hr class="mini central light-grey-dk">
                     </div>
                 </div>
@@ -758,6 +752,7 @@
     <script src="js/waypoints.min.js"></script><!-- Waypoints, needed for 'counterup' plugin -->
     <script src="js/jquery.fitvids.js"></script><!-- Fitvids plugin, (responsive videos) -->
     <script src="js/jquery.flexslider-min.js"></script><!-- Flexslider -->
+    <script src="js/jquery.fs.wallpaper.js"></script><!-- Video plugin -->
     <script src="js/jquery.easing.min.js"></script><!-- Easing plugin, for opacity fade on menu background images -->
     <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
 
@@ -780,17 +775,20 @@
         });
     </script>
 
-    <!-- Teamimonials Carousel -->
+    <!-- Initialize background video in hero section, (above the fold) -->
     <script>
-        $(document).ready(function(){
-            $('#testo-carousel').carousel({
-                pauseOnHover: true,
-                interval: 4000,
+        $(document).ready(function() {
+            $("#videohero").wallpaper({
+                source: {
+                    mp4:    "video/hero.mp4",
+                    ogg:    "video/hero.ogv",
+                    webm:   "video/hero.webm"
+                }
             });
         });
     </script>
 
-    <!-- Initialize flexslider for blogfeed slider -->
+    <!-- Initialize flexslider for blog-roll slider -->
     <script>
         // second-flexslider
         $(window).load(function() {
@@ -798,7 +796,7 @@
             animation: "slide",
             directionNav: false,
             controlNav: false,
-            touch: false,
+            touch: true,
             slideshow: false
           });
         });
@@ -809,8 +807,27 @@
         })
     </script>
 
-    <!-- ========== Insert your Google Analytics code below this line ========== -->
+    <!-- Initialize teamimonials carousel -->
+    <script>
+        $(document).ready(function(){
+            $('#testo-carousel').carousel({
+                pauseOnHover: true,
+                interval: 4000,
+            });
+        });
+    </script>
 
+    <!-- ========== Insert your Google Analytics code below this line ========== -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5403742-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
     <!-- ======================== End Google Analytics ========================= -->
 
 </body>

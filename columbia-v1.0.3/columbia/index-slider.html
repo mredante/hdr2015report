@@ -26,6 +26,19 @@
     <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    
+    	<!-- CSS CUSTOM Styles -->
+	<link rel="stylesheet" href="css/jquery.rollbar.css" />
+	<link rel="stylesheet" href="css/fancyscroll.css" />
+     <link href="css/style-custom.css" rel="stylesheet"><!-- sidebar theme stylesheet -->
+
+
+	
+	<!-- JS CUSTOM Scripts -->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/fancyscroll.min.js"></script>
+	<script type="text/javascript" src="js/scripts1.js"></script>
 
     <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
     <!--[if IE]>
@@ -161,6 +174,7 @@
 
     <!-- ============================ Social menu, (modal window) ============================ -->
 
+    
     <div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
 
         <!-- Menu Trigger -->
@@ -188,43 +202,44 @@
         </div>
 
     </div>
+    </div>
 
     <!-- =============================== End social menu ============================== -->
 
     <!-- ============================ Header/fixed sidebar ============================ -->
 
-    <header id="header">
-        
-        <!-- Main menu toggle -->
-        <button class="toggle" data-toggle="modal" data-target="#menumodal">
-            <span class="menu-bar bar-1"></span>
-            <span class="menu-bar bar-2"></span>
-            <span class="menu-bar bar-3"></span>
-        </button>
-        
-        <!-- Second logo for mobiles/tablets only. Maximum height of 65px -->
-        <div class="mobile_logo">
-            <img src="img/logo.png" alt="Columbia Logo">
-        </div>
+	<!-- Sidebar/Header -->
+	<header id="header">
+    <div id="sidebar1">
 
-        <!-- Bullet navigation -->
-        <nav id="bullets" class="cover">
-            <ul>
-                <li class="current-page-item"><a href="#hero-slider"></a></li>
-                <li><a href="#icons"></a></li>
-                <li><a href="#two"></a></li>
-                <li><a href="#stats"></a></li>
-                <li><a href="#blogfeed"></a></li>
-                <li><a href="#testimonials"></a></li>
-            </ul>
-        </nav>
+		<!-- navigation menu-->
+		<nav id="nav">
+			<ul>
+				<li><a href="#/about">ABOUT</a></li>
+				<li><a href="#/portfolio">PORTFOLIO</a></li>
+				<li><a href="#/blog">BLOG</a></li>
+				<li><a href="#/features">FEATURES</a></li>
+				<li><a href="#/contact">CONTACT</a></li>
+			</ul>
+		</nav>
+						
+	</div>
+    		<!-- multitab switcher -->
+		<div id="multitab_wrap">
+			<div class="multitab">
+				<ul class="tabnav">
+					<li><a class="social email" href="#tab_address" title="Address"></a></li>
+					<li><a class="social twitter" href="#tab_twitter" title="Latest Tweets"></a></li>
+					<!-- external links -->
+					<li><a class="social facebook external" href="http://www.facebook.com" target="_blank"></a></li>
+					<li><a class="social flickr external" href="http://www.flickr.com" target="_blank"></a></li>
+				</ul>	
+			</div>
 
+		</div>
     </header>
-
-    <!-- Social menu toggle - keep outside of header to prevent horrible positioning problem on ipads -->
-    <button class="social" data-toggle="modal" data-target="#socialmodal">
-        <span class="icon-share"></span>
-    </button>
+	<!-- End Sidebar/Header -->
+	<!-- End Sidebar/Header -->
     
     <!-- End header/fixed sidebar -->
 
@@ -252,7 +267,8 @@
             </ol>
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner">
+            <div id="about" class="fancyscroll-section">
+                <div class="carousel-inner">
                 <div class="item active cover element-img" style="background-image: url('img/slider/slide-1.jpg')">
                     <div class="carousel-caption">
                         <h1 class="wow fadeInUp" data-wow-delay="0.4s">We are a digital design firm with clout.</h1>
@@ -286,6 +302,7 @@
                     <div class="overlay black"></div>
                 </div>
             </div>
+            </div>
 
             <!-- Controls -->
             <a class="left carousel-control" href="#hero-slider" data-slide="prev">
@@ -296,8 +313,9 @@
             </a>
 
         </section>
-
+<div id="portfolio" class="fancyscroll-section">
         <section class="container wow fadeInUp" data-wow-delay="0.5s">
+            <div id="about" class="fancyscroll-section">
             <div class="row padding">
                 <div class="col-xs-12">
                     <h3>We are a collaborate company</h3>
@@ -305,7 +323,10 @@
                     <p>Sometime into the expedition, <a href="#" class="textlink" title="text link">we stumbled across</a> a narrow, dark tunnel. We crawled in and started to make our way further down, and to our surprise, it opened out into the largest, most lucious rainforest we had ever seen.</p>
                 </div>
             </div>
-        </section>
+            </div>
+            
+    </section>
+    </div>
 
         <!-- ============================ Section three: image and text ============================ -->
 
@@ -360,6 +381,7 @@
                 </div>
             </div>
         </section>
+        </div>
 
         <!-- ============================ Section six: ordered-lt list-items ============================ -->
 
