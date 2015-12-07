@@ -1,0 +1,440 @@
+/*
+    This is te stylesheet for specific elements of the HDI tree visualization
+
+    Created on : 23-nov-2015, 20:38:33
+    Author     : Jurjen Verhagen (jurjen@zolabo.com)
+*/
+
+h2.hdiTreeTitle{
+    text-align: center;
+    margin: 20px 0px;
+    font-weight: normal;
+    font-family: 'Vollkorn', Georgia, serif;
+}
+
+div.hdiTree{
+    position: relative;
+    top: -50px;
+}
+
+#hdiTree1{
+    height: 500px;
+}
+
+#hdiTree2{
+    height: 500px;
+}
+
+#hdiTreeBackground{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 500px;
+}
+
+#hdiTreeSettings, #hdiTree1Settings, #hdiTree2Settings{
+    min-height: 150px;
+    background-color: #1babe2;
+    color: white;
+    position: relative;
+    top: 0px;
+    transition: top 0.15s linear;
+}
+#hdiTree1Settings, #hdiTree2Settings{
+    min-height: 120px;
+}
+#hdiTreeSettings.hdiTreeMax{
+    top: -500px;
+    min-height: 500px;
+    margin-bottom: -500px;
+}
+#hdiTree1Settings.hdiTreeMax, 
+        #hdiTree2Settings.hdiTreeMax{
+    top: -480px;
+    min-height: 480px;
+    margin-bottom: -480px;
+}
+
+
+#hdiTreeSettings h3{
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+    cursor: pointer;
+}
+#hdiTree1Settings h3, #hdiTree2Settings h3{
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+    padding-left: 25px;
+    background: transparent url('../img/hditree/pencilicon.svg') left center no-repeat;
+}
+#hdiTree1Settings.hdiTreeMax h3, #hdiTree2Settings.hdiTreeMax h3{
+    text-align: center;
+    position: relative;
+    padding-top: 35px;
+    padding-left: 0px;
+    right: 0px;
+    top: 0px;
+    background: transparent;
+}
+#hdiTreeSettings h3:after{
+    position: absolute;
+    display: block;
+    content: '';
+    top: -40px;
+    left: 50%;
+    margin-left: -80px;
+    width: 160px;
+    height: 40px;
+    background: transparent url('../img/hditree/arrow_up.svg') center bottom no-repeat;
+}
+#hdiTreeSettings.hdiTreeMax h3{
+    padding-top: 35px;
+}
+
+#hdiTreeSettings.hdiTreeMax h3:after, #hdiTree1Settings.hdiTreeMax h3:after, #hdiTree2Settings.hdiTreeMax h3:after{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -80px;
+    width: 160px;
+    height: 40px;
+    top: -6px;
+    background: transparent url('../img/hditree/arrow_down.svg') center bottom no-repeat;
+}
+.hdiTreeMin .hdiTreeSettingsContainer{
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.15s;
+}
+.hdiTreeMax .hdiTreeSettingsContainer{
+    display: block;
+    height: 100%;
+}
+
+
+.hdiTree1SettingsProp, .hdiTree2SettingsProp{
+    display: inline-block;
+    width: 49%;
+    margin-top: -20px;
+    position: relative;
+    min-height: 100px;
+}
+.hdiTreeMobile .hdiTree1SettingsProp, .hdiTree2SettingsProp{
+    margin-top: 10px;
+}
+.hdiTreeMobile .hdiTree1SettingsProp, .hdiTreeMobile .hdiTree2SettingsProp{
+    width: 100%;
+}
+.hdiTree1SettingsProp p, .hdiTree2SettingsProp p{
+    position: relative;
+    display: block;
+    width: 300px;
+    margin: 0px auto;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+}
+.hdiTreeMobile .hdiTree1SettingsProp p, .hdiTreeMobile .hdiTree2SettingsProp p{
+    margin: 0 20px;
+    text-align: left;
+}
+.hdiTreeDesktop .hdiTree1SettingsProp p{
+    text-align: right;
+}
+.hdiTree1SettingsProp p span, .hdiTree2SettingsProp p span{
+    display: inline-block;
+    width: 100px;
+    font-family: 'Vollkorn', Georgia, serif;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none;
+    font-size: 12px;
+}
+.hdiTree1SettingsProp p span:nth-child(odd), .hdiTree2SettingsProp p span:nth-child(odd){
+    width: 200px;
+}
+
+.hdiTreeMax .hdiTree1SettingsProp, .hdiTreeMax .hdiTree2SettingsProp{
+    display: none;
+}
+
+.hdiTreeSettingsContainer > p{
+    color: white;
+    position: relative;
+    margin: 20px auto 0px;
+    max-width: 660px;
+    text-align: center;
+    font-style: italic;
+    font-size: 28px;
+}
+
+.hdiTreeMobile .hdiTreeSettingsContainer > p{
+    padding: 0px 0 0px;
+    font-size: 22px;
+}    
+
+
+.hdiTree1SettingsForm, .hdiTree2SettingsForm{
+    padding-left: 80px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    /*font-weight: 700;*/
+}
+
+.hdiTreeMobile .hdiTree1SettingsForm, .hdiTreeMobile .hdiTree2SettingsForm{
+    padding: 0px 20px;
+}
+
+.hdiTree1SettingsForm p, .hdiTree2SettingsForm p{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin: 20px 0px 0px;
+    letter-spacing: 0.5px;
+}
+
+.hdiTreeSettingsContainer input[type=radio]{
+    width: 16px;
+    height: 16px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.hdiTreeSettingsContainer label{
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+.hdiTreeSettingsSubmit{
+    display: block;
+    background-color: #f1af00;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+#hdiTreeSettings .hdiTree1SettingsForm .hdiTreeSettingsSubmit{
+    display: none;
+}
+.hdiTreeDesktop .hdiTree2SettingsForm .hdiTreeSettingsSubmit{
+    width: 300px;
+    margin-left: -230px;
+    margin-top: 65px;
+}
+.hdiTreeMobile .hdiTreeSettingsSubmit{
+    max-width: 660px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 35px;
+}
+
+/* setting for mobile view */
+.hdiTreeMobile{ display: none; }
+
+.hdiTreeCountrySelect{
+    color: #333;
+    line-height: 30px;
+    height: 30px;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+ 
+    .hdiTreeMobile{ display: block; }
+    .hdiTreeDesktop{ display: none; }
+    
+    #hdiTreeBackground{ display: none; }
+    
+}
+
+
+
+/* @group Base */
+.chosen-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  width: 400px !important;
+}
+.hdiTreeMobile .chosen-container {
+    width: 280px !important;
+}
+.chosen-container * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.chosen-container .chosen-drop {
+  position: absolute;
+  top: 100%;
+  left: -9999px;
+  z-index: 1010;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-top: 0;
+  background: #fff;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+}
+.chosen-container.chosen-with-drop .chosen-drop {
+  left: 0;
+}
+.chosen-container a {
+  cursor: pointer;
+}
+.chosen-container .search-choice .group-name, .chosen-container .chosen-single .group-name {
+  margin-right: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  color: #999999;
+}
+.chosen-container .search-choice .group-name:after, .chosen-container .chosen-single .group-name:after {
+  content: ":";
+  padding-left: 2px;
+  vertical-align: top;
+}
+
+/* @end */
+/* @group Single Chosen */
+.chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 45px;
+  height: 32px;
+  border: 0px none;
+  border-radius: 7px;
+  background: #fff url('../img/hditree/worldicon.svg') left center no-repeat;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 32px;
+}
+.chosen-container-single .chosen-default {
+  color: #999;
+}
+.chosen-container-single .chosen-single span {
+  display: block;
+  overflow: hidden;
+  margin-right: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chosen-container-single .chosen-single div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 18px;
+  height: 100%;
+}
+.chosen-container-single .chosen-single div b {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.chosen-container-single .chosen-search {
+  position: relative;
+  /*z-index: 1010;*/
+  margin: 0;
+  padding: 3px 4px;
+  white-space: nowrap;
+}
+.chosen-container-single .chosen-search input[type="text"] {
+  margin: 1px 0;
+  padding: 4px 16px 4px 5px;
+  width: 100%;
+  height: 22px;
+  outline: 0;
+  border: 0;
+  background-color: white;
+  line-height: 22px;
+  border-radius: 0;
+  color: #333;
+  text-transform: uppercase;
+}
+.chosen-container-single .chosen-drop {
+  margin: -31px 0px 0px 38px;
+  width: 362px;
+  border-radius: 0 7px 7px 7px;
+  border: 0;
+}
+.hdiTreeMobile .chosen-container-active .chosen-drop {
+    width: 242px;
+}
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+  position: absolute;
+  left: -9999px;
+}
+
+/* @end */
+/* @group Results */
+.chosen-container .chosen-results {
+  color: #adadad;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 4px 4px 0;
+  padding: 0 0 0 4px;
+  max-height: 240px;
+  -webkit-overflow-scrolling: touch;
+}
+.chosen-container .chosen-results li {
+  display: none;
+  margin: 0;
+  padding: 8px 6px;
+  border-top: 1px solid #c4c4c4;
+  list-style: none;
+  line-height: 15px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  -webkit-touch-callout: none;
+}
+.chosen-container .chosen-results li.active-result {
+  display: list-item;
+  cursor: pointer;
+}
+
+.chosen-container .chosen-results li.highlighted {
+  background-color: #ececec;
+  color: #808080;
+}
+.chosen-container .chosen-results li.no-results {
+  color: #808080;
+  display: list-item;
+  background: #f4f4f4;
+}
+.chosen-container .chosen-results li.group-result {
+  display: list-item;
+  font-weight: bold;
+  cursor: default;
+}
+.chosen-container .chosen-results li.group-option {
+  padding-left: 15px;
+}
+.chosen-container .chosen-results li em {
+  font-style: normal;
+  text-decoration: underline;
+  color: #333;
+}
+
