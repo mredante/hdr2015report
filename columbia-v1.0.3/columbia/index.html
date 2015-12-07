@@ -20,9 +20,13 @@
     <link href="css/flexslider.css" rel="stylesheet"><!-- Flexslider styles for #blogfeed -->
     <link href="css/jquery.fs.wallpaper.css" rel="stylesheet"/><!-- Video css file -->
     <link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/nv.d3.css"><!-- Chapter 4 stylesheet -->
     <link rel="stylesheet" href="css/bootstrap-multiselect.css"><!-- Chapter 4 stylesheet -->
     <link rel="stylesheet" href="css/chapter4.css"><!-- Chapter 4 stylesheet -->
+=======
+    <link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
+>>>>>>> origin/master
     <link href="css/hditree.css" rel="stylesheet"><!-- Stylesheet for the HDI tree -->
 
     <!-- Load our fonts from Google -->
@@ -203,6 +207,7 @@ The chapter feature special contributions by Kailash Satyarthi, Activist and 201
         </section>
 
         <!-- ============================ Chapter 2 begin ============================ -->
+<<<<<<< HEAD
  <section id="two" class="white">
              <div class="container">
                  <div class="row padding wow fadeInUp" data-wow-delay="0.5s" style="padding-top: 10px;">
@@ -314,6 +319,119 @@ The chapter feature special contributions by Kailash Satyarthi, Activist and 201
                      </div>
                  </div>
              </div><!-- /.container -->
+=======
+        <section id="two" class="white">
+            <div class="container">
+                <div class="row padding wow fadeInUp" data-wow-delay="0.5s" style="padding-top: 10px;">
+                    <div class="col-xs-12 white">
+                        <h2>Chapter 2: Human development and work: progress and challenges</h2>
+                        <hr class="mini">
+                        <p>Over the past two decades, the world has made major strides in human development. Today, people are living longer, more children are going to school and more people have access to clean water and basic sanitation. <br /><br />
+                        Since 1990, 2 billion people have been lifted out of low human development, extreme income poverty has been reduced by more than a billion. Every region of the world has seen Human Development Index (HDI) gains. <br /><br />The chapter features special contribution by Orhan Pamuk, Novelist, academic and recipient of the 2006 Nobel Prize in Literature.<br /><br />
+                        Interactive visualization below explores changes in HDI and its components on country, region and global levels. 
+                        </p>
+                    </div>
+                </div>
+            </div><!-- /.container -->
+                        
+<!-- ============================ Section three: image and text ============================ -->
+            <div class="container">
+                 <div class="col-xs-12">
+                     <hr class="bq-bottom" />
+                     <h2 class="hdiTreeTitle">The tree represents human development, measured by the Human Development Index for the selected country or region</h2>
+                     <hr class="bq-top" />
+                 </div>    
+            </div>
+            <div class="row hdiTree">
+                <div id="hdiTreeBackground"></div>
+                <div id="hdiTree1" class="col-md-6"></div>
+                <div id="hdiTree1Settings" class="hdiTreeMin hdiTreeMobile">
+                    <div class="hdiTree1SettingsProp"></div>
+                    <h3 class="hdiTreeBtnChange">Change</h3>
+                    <div class="hdiTreeSettingsContainer">
+                        <p>Selection a country, region or development classification for this tree to compare the results</p>
+                        <div class="hdiTree1SettingsForm"></div>
+                    </div>
+                </div>
+                <div id="hdiTree2" class="col-md-6"></div>
+                <div id="hdiTree2Settings" class="hdiTreeMin hdiTreeMobile">
+                    <div class="hdiTree2SettingsProp"></div>
+                    <h3 class="hdiTreeBtnChange">Change</h3>
+                    <div class="hdiTreeSettingsContainer">
+                        <p>Selection a country, region or development classification for this tree to compare the results</p>
+                        <div class="hdiTree2SettingsForm"></div>
+                    </div>
+                </div>
+                <div id="hdiTreeSettings" class="col-md-12 hdiTreeMin hdiTreeDesktop">
+                    <h3 class="hdiTreeBtnChange">Change</h3>
+                    <div class="hdiTree1SettingsProp"></div>
+                    <div class="hdiTree2SettingsProp"></div>
+                    <div class="hdiTreeSettingsContainer container">
+                        <p>Selection a country, region or development classification for this tree to compare the results</p>
+                        <div class="hdiTree1SettingsForm col-md-6"></div>
+                        <div class="hdiTree2SettingsForm col-md-6"></div>
+                    </div>
+                </div>
+            </div>
+            <script type="text.html" id="tmplHdiTreeProperties">
+                <p>
+                    <%=region%>, <%=year%><br/>
+                    <span>HDI: <%=hdi%></span><span>Years of schooling: <%=edu%></span>
+                    <span>GNI: <%=gni%></span><span>Life expectancy: <%=hi%></span>
+                </p>
+            </script>
+            <script type="text.html" id="tmplHdiTreeForm">
+                <p>Type to search</p>
+                <select id="hdiTree<%=tree%>Region" class="hdiTreeCountrySelect">
+                    <% for(var i = 0; i < options.length; i++){ %>
+                        <option value="<%=options[i]%>" <% if(currentRegion == options[i]){ %>selected="selected"<% } %>><%=options[i]%></option>
+                    <% } %>
+                </select>
+                <p>Choose year of data</p>
+                <input type="radio" id="hdiTree<%=tree%>Year1990" value="1990" name="hdiTree<%=tree%>Year" <% if(currentYear == 1990){ %>checked="checked"<% } %> /> <label for="hdiTree<%=tree%>Year1990">1990</label>
+                <input type="radio" id="hdiTree<%=tree%>Year2014" value="2014" name="hdiTree<%=tree%>Year" <% if(currentYear == 2014){ %>checked="checked"<% } %> /> <label for="hdiTree<%=tree%>Year2014">2014</label>
+                <a href="#" class="hdiTreeSettingsSubmit">Load this data</a>
+            </script>
+<!--            <script type="text/javascript" src="../../../../../zviz/vendor/closure/goog/base.js"></script>
+            <script type="text/javascript" src="../../../../../zviz/deps.js"></script>
+            <script type="text/javascript" src="../../../../source/deps.js"></script>
+            <script type="text/javascript" src="../../../../source/hditree.js"></script>-->
+            <script type="text/javascript" src="js/hditree.min.js"></script>
+            <script type="text/javascript">
+                project.start();
+            </script>   
+                 
+           
+            <div class="container">
+                <div class="row padding wow fadeInUp" data-wow-delay="0.5s" style="padding-top: 10px;">
+                    <div class="col-xs-12 white">
+                        <div class="panel-group" id="accordion">
+                              <div class="panel panel-default">
+                                <div class="panel-heading-accordian">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                      Click to Read more <span class="icon-arrow-down2"></span>
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    The human progress has been contributed to by the work of nearly 1 billion people in agriculture, the contributions of 80 million workers in health and education, the creativity of 450 million entrepreneurs and the support of 53 million of domestic workers.<br /><br />
+                    At the same time, human progress has been uneven with deep human deprivations. And significant human potential remains unused, misused and abused. More than 200 million people with 74 million young people are out of work, more than 800 million working poor are living on less than $2 a day.<br /><br />
+                    Overcoming the existing human deprivations and addressing the emerging human development challenges will require optimal use of the world’s human potential.<br /><br /> 
+                    The chapter features special contribution by Robert Reich, Former United States Secretary of Labor. 
+
+                                  </div>
+                                              <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <button type="button" class="btn btn-success btn-block">Download Chapter 2 <img src="img/text-download.png"  alt="Download Chapter 2"></button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                </div>
+            </div><!-- /.container -->
+>>>>>>> origin/master
         </section>
         
 <!-- ============================ Chapter 2 end ============================ -->        
