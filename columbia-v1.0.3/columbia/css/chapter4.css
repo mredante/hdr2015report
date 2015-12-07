@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Vollkorn';
+    src: url('../fonts/Vollkorn-Regular.ttf') format('truetype');
+}
+
+svg text {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: ;
+  color: #F26F70;
+  line-height: 30px
+}
+
+.nvd3 .nv-x.nv-axis line {
+    stroke-width: 0px;
+}
+
+.nvd3 .nv-x.nv-axis text {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F26F70;
+  line-height: 30px
+}
+
+.nvd3 .nv-y.nv-axis text {
+    fill: #333;
+}
+
+#chapter4_wrapper {
+    font-family: 'Vollkorn', Georgia, serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #333;
+
+    background-color: none;
+    height: 500px;
+}
+
+.chapter4_label {
+    font-weight: bold;
+    fill: #333;
+    stroke: transparent;
+    text-transform:capitalize;
+}
+
+.nvtooltip.xy-tooltip {
+    font-family: 'Vollkorn', Georgia, serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #333;
+}
