@@ -256,32 +256,32 @@ The chapter feature special contributions by Kailash Satyarthi, Activist and 201
                      </div>
                 </div>
             </div>
-     <script type="text.html" id="tmplHdiTreeProperties">
-                 <p>
-                     <%=region%>, <%=year%><br/>
-                     <span>HDI: <%=hdi%></span><span>Years of schooling: <%=edu%></span>
-                     <span>GNI: <%=gni%></span><span>Life expectancy: <%=hi%></span>
-                 </p>
-             </script>
-             <script type="text.html" id="tmplHdiTreeForm">
-                 <p>Type to search</p>
-                 <select id="hdiTree<%=tree%>Region" class="hdiTreeCountrySelect">
-                     <% for(var i = 0; i < options.length; i++){ %>
-                         <option value="<%=options[i]%>" <% if(currentRegion == options[i]){ %>selected="selected"<% } %>><%=options[i]%></option>
-                     <% } %>
-                 </select>
-                 <p>Choose year of data</p>
-                 <input type="radio" id="hdiTree<%=tree%>Year1990" value="1990" name="hdiTree<%=tree%>Year" <% if(currentYear == 1990){ %>checked="checked"<% } %> /> <label for="hdiTree<%=tree%>Year1990">1990</label>
-                 <input type="radio" id="hdiTree<%=tree%>Year2014" value="2014" name="hdiTree<%=tree%>Year" <% if(currentYear == 2014){ %>checked="checked"<% } %> /> <label for="hdiTree<%=tree%>Year2014">2014</label>
-                 <a href="#" class="hdiTreeSettingsSubmit">Load this data</a>
-             </script>
- <!--            <script type="text/javascript" src="../../../../../zviz/vendor/closure/goog/base.js"></script>
+            <script type="text.html" id="tmplHdiTreeProperties">
+                <p>
+                    <%=region%>, <%=year%><br/>
+                    <span>HDI: <%=hdi%></span><span>Years of schooling: <%=edu%></span>
+                    <span>GNI: <%=gni%></span><span>Life expectancy: <%=hi%></span>
+                </p>
+            </script>
+            <script type="text.html" id="tmplHdiTreeForm">
+                <p>Type to search</p>
+                <select id="hdiTree<%=tree%>Region" class="hdiTreeCountrySelect">
+                    <% for(var i = 0; i < options.length; i++){ %>
+                        <option value="<%=options[i]%>" <% if(currentRegion == options[i]){ %>selected="selected"<% } %>><%=options[i]%></option>
+                    <% } %>
+                </select>
+                <p>Choose year of data</p>
+                <input type="radio" id="hdiTree<%=tree%>Year1990" value="1990" name="hdiTree<%=tree%>Year" <% if(currentYear == 1990){ %>checked="checked"<% } %> /> <label for="hdiTree<%=tree%>Year1990">1990</label>
+                <input type="radio" id="hdiTree<%=tree%>Year2014" value="2014" name="hdiTree<%=tree%>Year" <% if(currentYear == 2014){ %>checked="checked"<% } %> /> <label for="hdiTree<%=tree%>Year2014">2014</label>
+                <a href="#" class="hdiTreeSettingsSubmit">Load this data</a>
+            </script>
+<!--             <script type="text/javascript" src="../../../../../zviz/vendor/closure/goog/base.js"></script>
              <script type="text/javascript" src="../../../../../zviz/deps.js"></script>
              <script type="text/javascript" src="../../../../source/deps.js"></script>
              <script type="text/javascript" src="../../../../source/hditree.js"></script>-->
              <script type="text/javascript" src="js/hditree.min.js"></script>
              <script type="text/javascript">
-                 project.start();
+                 _zolaboHdiTree.start();
              </script>   
                   
             
