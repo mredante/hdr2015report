@@ -21,6 +21,29 @@ div.hdiTree{
     height: 500px;
 }
 
+#hdiTree1:after, #hdiTree2:after{
+    opacity: 0;
+    transition: 0.2s opacity linear;
+     content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    right: -150px;
+    bottom: 0;
+    background: transparent url('../img/hditree/legend.svg') center bottom;
+}
+#hdiTree2:after{
+    left: -150px;
+}
+#hdiTree1:hover:after, #hdiTree2:hover:after{
+   
+    opacity: 1;
+}
+#hdiTree2:hover:after{
+    left: -150px;
+}
+
 #hdiTree2{
     height: 500px;
 }
@@ -256,6 +279,13 @@ div.hdiTree{
     .hdiTreeDesktop{ display: none; }
     
     #hdiTreeBackground{ display: none; }
+    
+    #hdiTree1:hover:after, #hdiTree2:hover:after{
+        width: auto;
+        right: 0px;
+        left: 0px;
+    }
+    
     
 }
 
