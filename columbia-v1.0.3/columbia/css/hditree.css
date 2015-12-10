@@ -20,7 +20,7 @@ div.hdiTree{
 #hdiTree1{
     height: 500px;
 }
-
+/*
 #hdiTree1:after, #hdiTree2:after{
     opacity: 0;
     transition: 0.2s opacity linear;
@@ -43,6 +43,23 @@ div.hdiTree{
 #hdiTree2:hover:after{
     left: -150px;
 }
+*/
+
+#hdiTreeLegend{
+    width: 400px; 
+    background: transparent url('../img/hditree/legend2.svg') top right no-repeat;
+    right: -326px;
+    top: 0px;
+    height: 500px;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.2s right linear;
+}
+#hdiTreeLegend.hdiTreeShown{
+    right: 0px;
+    background: transparent url('../img/hditree/legend2hide.svg') top right no-repeat;
+}
+
 
 #hdiTree2{
     height: 500px;
@@ -71,12 +88,14 @@ div.hdiTree{
     top: -500px;
     min-height: 500px;
     margin-bottom: -500px;
+    z-index: 2;
 }
 #hdiTree1Settings.hdiTreeMax, 
         #hdiTree2Settings.hdiTreeMax{
     top: -480px;
     min-height: 480px;
     margin-bottom: -480px;
+    z-index: 2;
 }
 
 
@@ -280,10 +299,14 @@ div.hdiTree{
     
     #hdiTreeBackground{ display: none; }
     
-    #hdiTree1:hover:after, #hdiTree2:hover:after{
+/*    #hdiTree1:hover:after, #hdiTree2:hover:after{
         width: auto;
         right: 0px;
         left: 0px;
+    }*/
+
+    #hdiTreeLegend{
+        right: -340px;
     }
     
     
