@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, user-scalable=yes"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><!-- Disable horrible auto-skype for contact numbers in IE -->
+    <meta name="description" content="Add a site description here"><!-- Add your site description -->
+    <meta name="author" content="Add author description here"><!-- Add your author description -->
+    <meta name="keywords" content="add,some,general,keywords,here,about,your,site"><!-- Add sites your keywords -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /><!-- Include a Favicon, (always keep in root of folder) -->
+
+    <title>Columbia | An Agency Theme</title><!-- Your page/site title -->
+
+    <!-- Load Our CSS - Do not alter the load order -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Core - ALways load first -->
+    <link href="css/animate.css" rel="stylesheet"><!-- Animatations -->
+    <link href="css/icomoon.css" rel="stylesheet"><!-- Icon Font -->
+    <link href="css/flexslider.css" rel="stylesheet"><!-- Flexslider styles for #blogfeed -->
+    <link href="css/style.css" rel="stylesheet"><!-- Main theme stylesheet -->
+    <link href="css/custom.css" rel="stylesheet"><!-- Custom styles - Always load last -->
+    <link href="css/custom-animations.css" rel="stylesheet"><!-- Custom styles - Always load last -->
+    <link href="css/intro-animation.css" rel="stylesheet"><!-- Custom styles - Always load last -->
+
+    <!-- Load our fonts from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+    <![endif]-->
+
+    <!-- Load our stylesheet for IE9 -->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <![endif]-->
+
+    <!-- Load our jQuery, with an alternative source/fallback to our own version if request is unavailable -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+        <!-- ============================ Intro animation ============================ -->
+        <section id="animated-intro" class="cover" style="height: 100vh">
+
+          <!-- Waves -->
+          <?xml version="1.0" standalone="no"?>
+          <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="intro">
+            <defs>
+              <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(209,225,173);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(126,182,33);stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="yellow" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(250,245,79);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(247,235,65);stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(176,213,240);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(63,166,234);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path id="wave-1" d="" fill="url(#green)"/>
+            <path id="wave-2" d="" fill="#f6e951" fill="url(#yellow)"/>
+            <path id="wave-3" d="" fill="url(#blue)"/>
+          </svg>
+
+          <!-- Title text -->
+          <img id="intro-text" class="intro-text" src="img/intro/intro-text.png" alt="">
+
+          <!-- UN Logo -->
+          <img id="un-logo" class="un-logo" src="img/intro/un-logo.png" alt="">
+
+          <!-- People icons (also used for circle positioning) -->
+          <div id="intro-people" class="intro-people">
+            <img class="people-icon" src="img/intro/people-1.png" alt="">
+            <img class="people-icon" src="img/intro/people-2.png" alt="">
+            <img class="people-icon" src="img/intro/people-3.png" alt="">
+            <img class="people-icon" src="img/intro/people-4.png" alt="">
+            <img class="people-icon" src="img/intro/people-5.png" alt="">
+            <img class="people-icon" src="img/intro/people-6.png" alt="">
+            <img class="people-icon" src="img/intro/people-7.png" alt="">
+            <img class="people-icon" src="img/intro/people-8.png" alt="">
+            <img class="people-icon" src="img/intro/people-9.png" alt="">
+            <img class="people-icon" src="img/intro/people-10.png" alt="">
+          </div>
+
+          <!-- Report pages -->
+          <div id="intro-pages" class="intro-pages">
+            <img src="img/intro/page-8.png" alt="Page 8" id="page-8" />
+            <img src="img/intro/page-7.png" alt="Page 7" id="page-7" />
+            <img src="img/intro/page-6.png" alt="Page 6" id="page-6" />
+            <img src="img/intro/page-5.png" alt="Page 5" id="page-5" />
+            <img src="img/intro/page-4.png" alt="Page 4" id="page-4" />
+            <img src="img/intro/page-3.png" alt="Page 3" id="page-3" />
+            <img src="img/intro/page-2.png" alt="Page 2" id="page-2" />
+            <img src="img/intro/page-1.png" alt="Page 1" id="page-1" />
+          </div>
+      </section>
+
+    <!-- ========== Load our scripts - keep positioned at the end of your document ========== -->
+
+    <script src="js/bootstrap.min.js"></script><!-- Bootstrap core - always load first -->
+    <script src="js/wow.min.js"></script><!-- WoW animations -->
+    <script src="js/jquery.nav.js"></script><!-- Left-hand bullet navigation -->
+    <script src="js/jquery.nicescroll.min.js"></script><!-- Scrollbars for whole page and main navigation -->
+    <!-- <script src="js/jquery.counterup.min.js"></script><!-- counterup plugin for increasing page stats --> -->
+    <!-- <script src="js/waypoints.min.js"></script><!-- Waypoints, needed for 'counterup' plugin --> -->
+    <script src="js/jquery.fitvids.js"></script><!-- Fitvids plugin, (responsive videos) -->
+    <script src="js/jquery.flexslider-min.js"></script><!-- Flexslider -->
+    <script src="js/jquery.easing.min.js"></script><!-- Easing plugin, for opacity fade on menu background images -->
+    <script src="js/snap.svg-min.js"></script><!-- SNAP SVG for svg animations -->
+    <script src="js/custom-animations.js"></script><!-- Merix custom animations -->
+    <script src="js/intro-animation.js"></script><!-- Merix custom animations -->
+    <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
+
+    <!-- Page-specific JS functions - these are functions that only occur on this specific page, so we DON'T want these placed in our scripts.js file as this file is loaded on every page for global site functions.  -->
+
+    <!-- Initialize CounterUp plugin for rounding up/animated statistics -->
+    <script>
+        // jQuery(document).ready(function($) {
+        //     $('.counter').counterUp({
+        //         delay: 10,
+        //         time: 1000
+        //     });
+        // });
+    </script>
+
+    <!-- Initialize fitvids.js plugin for responsive videos -->
+    <script>
+        $(document).ready(function(){
+            $(".fitvids").fitVids();
+        });
+    </script>
+
+    <!-- Teamimonials Carousel -->
+    <script>
+        $(document).ready(function(){
+            $('#testo-carousel').carousel({
+                pauseOnHover: true,
+                interval: 4000,
+            });
+        });
+    </script>
+
+    <!-- Initialize flexslider for blogfeed slider -->
+    <script>
+        // second-flexslider
+        $(window).load(function() {
+          $('#blogslider').flexslider({
+            animation: "slide",
+            directionNav: false,
+            controlNav: false,
+            touch: false,
+            slideshow: false
+          });
+        });
+        $('.prev, .next').on('click', function() {
+          var href = $(this).attr('href');
+          $('#blogslider').flexslider(href)
+          return false;
+        })
+    </script>
+
+    <!-- ========== Insert your Google Analytics code below this line ========== -->
+
+    <!-- ======================== End Google Analytics ========================= -->
+
+</body>
+
+</html>

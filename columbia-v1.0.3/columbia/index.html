@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="css/bootstrap-multiselect.css"><!-- Chapter 4 stylesheet -->
     <link rel="stylesheet" href="css/chapter4.css"><!-- Chapter 4 stylesheet -->
     <link href="css/hditree.css" rel="stylesheet"><!-- Stylesheet for the HDI tree -->
+        <link href="css/custom-animations.css" rel="stylesheet"><!-- INTRO -->
+    <link href="css/intro-animation.css" rel="stylesheet"><!-- INTRO -->
 
     <!-- Load our fonts from Google -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css">
@@ -66,42 +68,9 @@
 <body id="home">
 
     <!-- Our page loader -->
-    <div class="loadstack">
+    <!--<div class="loadstack">
         <div class="spinner"></div>
-    </div>
-
-
-    <!-- ============================ Social menu, (modal window) ============================ -->
-
-    <div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
-
-        <!-- Menu Trigger -->
-        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
-            <span class="icon-close"></span>
-        </button>
-        <div class="explore">
-            <h3>Be Social</h3>
-        </div>
-
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <h3>Connect with Jonathan Ive</h3>
-                    <hr class="mini white central">
-                    <ul class="socialicons motion">
-                        <li class="two twitter"><a href="http://twitter.com/" title="Twitter" target="_blank"><span class="icon-twitter"></span></a></li>
-                        <li class="four"><a href="http://dribbble.com/" title="Dribbble" class="dribbble" target="_blank"><span class="icon-dribbble"></span></a></li>
-                        <li class="six"><a href="http://facebook.com/" title="Facebook" class="facebook" target="_blank"><span class="icon-facebook"></span></a></li>
-                        <li class="eight"><a href="http://instagram.com/" title="Instagram" class="instagram" target="_blank"><span class="icon-instagram"></span></a></li>
-                        <li class="ten"><a href="http://vimeo.com/" title="Vimeo" class="vimeo" target="_blank"><span class="icon-vimeo"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- =============================== End social menu ============================== -->
+    </div> -->
 
     <!-- ============================ Header/fixed sidebar ============================ -->
 
@@ -114,16 +83,18 @@
         <!-- Bullet navigation -->
         <nav id="bullets" class="cover">
             <ul>
-                <li class="current-page-item"><a href="#videohero">welcome</a></li>
-                <li><a href="#intro">intro</a></li>
-                <li><a href="#one">one</a></li>
-                <li><a href="#two">two</a></li>
-                <li><a href="#three">three</a></li>
-                <li><a href="#four">four</a></li>
-                <li><a href="#five">five</a></li>
-                <li><a href="#six">six</a></li>
-                <li><a href="#annex">annex</a></li>
+                <li class="current-page-item"><a href="#videohero"></a></li>
+                <li><a href="#intro1">intro</a></li>
+                <li><a href="#one">Chapter&nbsp;one</a></li>
+                <li><a href="#two">Chapter&nbsp;two</a></li>
+                <li><a href="#three">Chapter&nbsp;three</a></li>
+                <li><a href="#four">Chapter&nbsp;four</a></li>
+                <li><a href="#five">Chapter&nbsp;five</a></li>
+                <li><a href="#six">Chapter&nbsp;six</a></li>
+                <li><a href="#annex">Statistical&nbsp;annex</a></li>
                 <li><a href="#media">media</a></li>
+                <br />
+                <li><a href="http://hdr.undp.org/en">HDRO&nbsp;website</a></li>
             </ul>
         </nav>
 
@@ -137,21 +108,65 @@
     <!-- Leading Page Container -->
     <!-- Always keep all page content wrapped in this div, with id="wrapper" and class="page-content" -->
     <div id="wrapper" class="page-content">
-
         <!-- ============================ Section one: hero ============================ -->
+      <section id="animated-intro" class="cover" style="height: 100vh">
 
-        <section id="videohero" class="cover">
-            <!-- Logo -->
-            <div class="logo">
-                
+            <!-- Waves -->
+            <?xml version="1.0" standalone="no"?>
+            <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" id="intro">
+              <defs>
+                <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:rgb(209,225,173);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:rgb(126,182,33);stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="yellow" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:rgb(250,245,79);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:rgb(247,235,65);stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:rgb(176,213,240);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:rgb(63,166,234);stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <path id="wave-1" d="" fill="url(#green)"/>
+              <path id="wave-2" d="" fill="#f6e951" fill="url(#yellow)"/>
+              <path id="wave-3" d="" fill="url(#blue)"/>
+            </svg>
+
+            <!-- Title text -->
+            <img id="intro-text" class="intro-text" src="img/intro/intro-text.png" alt="">
+
+            <!-- UN Logo -->
+            <img id="un-logo" class="un-logo" src="img/intro/un-logo.png" alt="">
+
+            <!-- People icons (also used for circle positioning) -->
+            <div id="intro-people" class="intro-people">
+              <img class="people-icon" src="img/intro/people-1.png" alt="">
+              <img class="people-icon" src="img/intro/people-2.png" alt="">
+              <img class="people-icon" src="img/intro/people-3.png" alt="">
+              <img class="people-icon" src="img/intro/people-4.png" alt="">
+              <img class="people-icon" src="img/intro/people-5.png" alt="">
+              <img class="people-icon" src="img/intro/people-6.png" alt="">
+              <img class="people-icon" src="img/intro/people-7.png" alt="">
+              <img class="people-icon" src="img/intro/people-8.png" alt="">
+              <img class="people-icon" src="img/intro/people-9.png" alt="">
+              <img class="people-icon" src="img/intro/people-10.png" alt="">
+            </div>
+
+            <!-- Report pages -->
+            <div id="intro-pages" class="intro-pages">
+              <img src="img/intro/page-8.png" alt="Page 8" id="page-8" />
+              <img src="img/intro/page-7.png" alt="Page 7" id="page-7" />
+              <img src="img/intro/page-6.png" alt="Page 6" id="page-6" />
+              <img src="img/intro/page-5.png" alt="Page 5" id="page-5" />
+              <img src="img/intro/page-4.png" alt="Page 4" id="page-4" />
+              <img src="img/intro/page-3.png" alt="Page 3" id="page-3" />
+              <img src="img/intro/page-2.png" alt="Page 2" id="page-2" />
+              <img src="img/intro/page-1.png" alt="Page 1" id="page-1" />
             </div>
         </section>
-
-        <!-- Specify background image for graceful fallback for mobiles and tablets -->
-        <section id="fallback" class="cover element-img" style="background-image: url('video/mobile-fallback.jpg');">
-        </section>
  <!-- ============================ Selim introduction ============================ -->
-        <section id ="intro">
+        <section id ="intro1">
         <section class="container padding">
             <div class="row">
                 <div class="col-xs-12 wow fadeInUp" data-wow-delay="0.5s">
@@ -162,7 +177,7 @@
             <br>
             <div class="row fitvids">
                 <div class="col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <iframe width="560" height="315" src="//www.youtube.com/embed/xQkM6hVynR8" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oyLXsPRuR3w" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -186,11 +201,11 @@ The interactive visualization below explores the synergetic relationship of work
             </div>
             <div id="collapseOne" class="panel-collapse collapse">
               <div class="panel-body">
-                Work enhances human development, but some work damages human development and some work puts workers at risk.<br /><br />
+                <p>Work enhances human development, but some work damages human development and some work puts workers at risk.<br /><br />
 <span class="textlink-positive">When positive</span>, work provides benefits beyond material wealth and fosters community, knowledge, strengthens dignity and inclusion. Nearly a billion workers in agriculture, 450 million entrepreneurs, 80 million workers in health and education, 53 million domestic workers, 970 million voluntary workers contribute to human progress.<br /><br />
 <span class="textlink-negative">When negative</span>, in the form of forced labour, child labour and human trafficking, work can violate human rights, threaten freedom and shatter dignity. An estimated 21 million people are currently in forced labour of whom 14 million (67 percent) were exploited for labour and 4.5 million (22 percent) sexually exploited. There are still 168 million child labourers worldwide. And some work e.g. work in hazardous industries may put workers in risk. There are 30 million workers in mining and their face risks every day.<br /> <br />
 Over the years work has contributed considerably to impressive progress in human development. However the progress has been uneven with significant human deprivations and large human potentials remain unused. <br /> <br />
-The chapter feature special contributions by Kailash Satyarthi, Activist and 2014 Nobel Peace Prize Laureate and Lemayh Gbowee, Peace Activist and 2011 Nobel Peace Prize winner.
+The chapter feature special contributions by Kailash Satyarthi, Activist and 2014 Nobel Peace Prize Laureate and Lemayh Gbowee, Peace Activist and 2011 Nobel Peace Prize winner.</p>
               </div>
                   <div class="col-md-3 col-sm-6 col-xs-12">
                 <a href="http://hdr.undp.org/sites/default/files/chapter1.pdf" target="_blank"><button type="button" class="btn btn-success btn-block">Download Chapter 1 <img src="img/text-download.png"  alt="Download Chapter 1"></button></a>
@@ -201,11 +216,90 @@ The chapter feature special contributions by Kailash Satyarthi, Activist and 201
                 </div>
             </div>
         </section>
+<section id="animated-svg-chapter-1" class="cover custom-animation">
+            <!-- SVG needs to be put in HTML for us to be able to animate it -->
+            <svg id="svg1" height="700" viewBox="0 0 643.28805 700.54557" width="643.79" xmlns="http://www.w3.org/2000/svg">
+                <defs id="defs6">
+                    <clipPath id="clipPath16"><path d="m0 792h612v-792h-612v792" id="path18"/></clipPath>
+                </defs>
+                <path d="m 441.55,230.32275 176.37,0 c 34.434,-0.0575 34.434,-0.1252 0,-0.18275 l -176.37,0 c 42.21,0.0465 39.676,0.13223 0,0.18275" opacity="0" fill="#f1b234" id="path22"/>
+                <path d="m 201.65,483.20725 -176.38,0 c -34.43,0.0575 -34.429,0.1252 0,0.18275 l 176.38,0 c -44.34,-0.0563 -39.69,-0.13223 0,-0.18275" opacity="0" fill="#33ade3" id="path26"/>
+                <path d="m578.89 162.22c-58.868-77.67-152.06-127.88-257.05-127.88-127.72 0-238.09 74.26-290.29 181.97h75.43c45.842-69.994 124.95-116.24 214.86-116.24 81.45 0 154.01 37.963 201.02 97.13l-28.649 17.89 85.06 8.125 30.03-79.992-30.421 18.996"
+                    fill="#f1b234" id="path30"/><path d="m536.72 497.22c-45.847 69.999-124.95 116.24-214.87 116.24-81.28 0-153.72-37.8-200.75-96.76l30.02-18.746-85.06-8.128-30.03 79.995 29.01-18.12c58.885 77.46 152 127.49 256.81 127.49 127.72 0 238.09-74.27 290.3-181.97h-75.42" fill="#33ade3"
+                    id="path34"/>
+                <g font-family="Vollkorn, Georgia, serif" id="texts-group">
+                    <g fill="#373535" id="g11">
+                        <g font-weight="400" id="g13">
+                            <text font-size="22" id="text36" x="298.28" y="77.83">
+                                <tspan id="tspan38" x="298.28" y="77.83">Work</tspan>
+                            </text>
+                            <text font-size="13" id="text40" x="54.32" y="277.35">
+                                <tspan fill-opacity="0" id="tspan42" x="54.32" y="277.35">Better health</tspan>
+                                <tspan fill-opacity="0" id="tspan44" x="20.914" y="307.65">Better knowledge and
+                                </tspan>
+                                <tspan fill-opacity="0" id="tspan46" x="74.68" y="327.58">skills</tspan>
+                                <tspan fill-opacity="0" id="tspan48" x="60.32" y="357.89">Awareness</tspan>
+                                <tspan fill-opacity="0" id="tspan50" x="50.17" y="389.85">Human capital</tspan>
+                                <tspan fill-opacity="0" id="tspan52" x="52.962" y="421.82">Opportunities</tspan>
+                                <tspan fill-opacity="0" id="tspan54" x="73.835" y="453.78">Choice</tspan>
+                            </text>
+                        </g>
+                        <text font-size="26" font-weight="700" id="text68" x="260.11" y="321.95">
+                            <tspan id="tspan70" x="260.11" y="321.95">Work and</tspan>
+                            <tspan id="tspan72" x="199.27" y="366.34">human development</tspan>
+                            <tspan id="tspan74" x="231.19" y="410.74">are synergistic</tspan>
+                        </text>
+                    </g>
+                    <text fill="#fff" font-size="40.03" font-weight="normal" id="g3398" letter-spacing="0" line-height="125%" word-spacing="0">
+                        <textPath id="textPath4225" xlink:href="#path4217">
+                            <tspan fill="#fff" font-size="22.518" id="tspan4215">Human development</tspan>
+                        </textPath>
+                    </text><path d="m221.13 635.08c106.63 45.36 223.57-7.92 223.57-7.92" fill-rule="evenodd" fill="none" id="path4217"/></g>
+                    <text fill="#373535" font-size="13" font-weight="400" id="text40-7" x="54.15" y="276.74">
+                        <tspan fill-opacity="0" id="tspan56-3" x="487.36" y="284.64">Income and livelihood</tspan>
+                        <tspan fill-opacity="0" id="tspan58-4" x="529.43" y="313.7">Security</tspan>
+                        <tspan fill-opacity="0" id="tspan60-1" x="480.08" y="342.76">Women’s empowerment</tspan>
+                        <tspan fill-opacity="0" id="tspan62-1" x="484.42" y="371.82">Participation and voice</tspan>
+                        <tspan fill-opacity="0" id="tspan64-4" x="483.04" y="400.88">Dignity and recognition</tspan>
+                        <tspan fill-opacity="0" id="tspan66-3" x="477.81" y="429.94">Creativity and innovation</tspan>
+                    </text>
+                </g>
+            </svg>
+            <!-- Tooltips start here - every tooltips has data-target set to svg element id which triggers this tooltip -->
+            <div class="svg-tooltips">
+                <div data-target="#path34">
+                    <h3 style="color: #33ade3; border-bottom: 2px solid #33ade3">Human development</h3>
+                    <p>Human development is a process of enlarging people’s choices—as they acquire more capabilities and enjoy more opportunities to use those capabilities to enhance well-being. </p>
+                    <p>Human development implies that people are not only beneficiaries of development, but must influence the process that shapes their lives. </p>
+                    <p>In all this, economic growth is an important means to human development, but not the goal. And there is no automatic link between economic growth and human development.</p>
+                </div>
+                <div data-target="#path30">
+                    <h3 style="color: #f1b234; border-bottom: 2px solid #f1b234">Work</h3>
+                    <p>For this report, work is defined as any activity that not only leads to the production and consumption of goods or services, but also goes beyond production for economic valuejobs and employment, but also unpaid care work, voluntary work and creative expressions. Work thus includes activities that may result in broader human well-being, both for the present and for the future generations.</p>
+                </div>
+                <div data-target="#path22">
+                    <h3 style="color: #f1b234; border-bottom: 2px solid #f1b234">Human development is affected by work through many channels</h3>
+                    <p><strong>Income and livelihood.</strong> People work primarily to achieve a decent standard of living. In market-based economies they generally do so through wage or self-employment.</p>
+                    <p><strong>Security.</strong> Through work people can build a secure basis for their and their families’ lives, enabling them to make long-term decisions and establish priorities and choices.</p>
+                    <p><strong>Women’s empowerment.</strong> Women who earn income from work often achieve greater economic autonomy and decision-making power within families and communities.</p>
+                    <p><strong>Participation and voice.</strong> By interacting with others through work, people learn to participate in collective decision-making and gain a voice.</p>
+                    <p><strong>Dignity and recognition.</strong> Good work is recognized by co-workers, peers and others and provides a sense of accomplishment, self-respect and social identity.</p>
+                    <p><strong>Creativity and innovation.</strong> Work unleashes human creativity and has generated countless innovations that have revolutionized many aspects of human life—as in health, education, communications and environmental sustainability.</p>
+                </div>
+                <div data-target="#path26">
+                    <h3 style="color: #33ade3; border-bottom: 2px solid #33ade3;">Workers can also benefit from higher human development, again operating through multiple channels</h3>
+                    <p><strong>Health.</strong> Healthier workers have longer and more productive working lives and can explore more options at home and abroad.</p>
+                    <p><strong>Knowledge and skills.</strong> Better educated and trained workers can do more diverse work—and to a higher standard—and be more creative and innovative.</p>
+                    <p><strong>Awareness.</strong> Workers who can participate more fully in their communities will be able to negotiate at work for better conditions and higher labour standards, which in turn will make industries more efficient and competitive.</p>
+                </div>
+            </div>
+        </section>
+
 
         <!-- ============================ Chapter 2 begin ============================ -->
  <section id="two" class="white">
              <div class="container">
-                 <div class="row padding wow fadeInUp" data-wow-delay="0.5s" style="padding-top: 10px;">
+                 <div class="row wow fadeInUp" data-wow-delay="0.5s" style="padding-top: 10px;">
                      <div class="col-xs-12 white">
                          <h2>Chapter 2: Human development and work: progress and challenges</h2>
                          <hr class="mini">
@@ -218,7 +312,7 @@ The chapter feature special contributions by Kailash Satyarthi, Activist and 201
              </div><!-- /.container -->
                          
  <!-- ============================ Section three: image and text ============================ -->
-             <div class="container">
+                          <div class="container">
                   <div class="col-xs-12">
                       <hr class="bq-bottom" />
                       <h2 class="hdiTreeTitle">The tree represents human development, measured by the Human Development Index for the selected country or region</h2>
@@ -283,7 +377,11 @@ The chapter feature special contributions by Kailash Satyarthi, Activist and 201
              <script type="text/javascript" src="js/hditree.min.js"></script>
              <script type="text/javascript">
                  _zolaboHdiTree.start();
+<<<<<<< HEAD
+             </script>      
+=======
              </script>   
+>>>>>>> origin/master
                   
             
              <div class="container">
@@ -299,11 +397,11 @@ The chapter feature special contributions by Kailash Satyarthi, Activist and 201
                                    </h4>
                                  </div>
                                  <div id="collapseTwo" class="panel-collapse collapse">
-                                   <div class="panel-body">
+                                   <div class="panel-body"><p>
                                      The human progress has been contributed to by the work of nearly 1 billion people in agriculture, the contributions of 80 million workers in health and education, the creativity of 450 million entrepreneurs and the support of 53 million of domestic workers.<br /><br />
                      At the same time, human progress has been uneven with deep human deprivations. And significant human potential remains unused, misused and abused. More than 200 million people with 74 million young people are out of work, more than 800 million working poor are living on less than $2 a day.<br /><br />
                      Overcoming the existing human deprivations and addressing the emerging human development challenges will require optimal use of the world’s human potential.<br /><br /> 
-                     The chapter features special contribution by Robert Reich, Former United States Secretary of Labor. 
+                     The chapter features special contribution by Robert Reich, Former United States Secretary of Labor.</p> 
  
                                    </div>
                                                <div class="col-md-3 col-sm-6 col-xs-12">
@@ -322,10 +420,10 @@ The chapter feature special contributions by Kailash Satyarthi, Activist and 201
 
         <section id="three" class="container wow fadeInUp" data-wow-delay="0.5s">
             <div class="row padding">
-                <div class="col-xs-12 centertext">
+                <div class="col-xs-12">
                     <h2>Chapter 3: The changing world of work
 </h2>
-                    <hr class="title">
+                    <hr class="mini">
                     <p>Today, the transformation of work is driven by globalization and technological revolutions, particularly the digital revolution. Globalization has fostered global interdependence, with major impacts on patterns of trade, investment, growth and job creation and destruction—as well as on networks for creative and volunteer work. We seem to be living through new and accelerated technological revolutions. New opportunities are emerging, but so do new risks. In this new world of work there are winners, so are losers and human development impacts mixed.</p>
                 </div>
             </div>
@@ -335,9 +433,7 @@ The chapter feature special contributions by Kailash Satyarthi, Activist and 201
 
 <!-- ============================ Chapter 3 slider Start ============================ -->
         <section id="blogfeed" class="container-fluid light-grey-lt">
-            <div class="modtitle">
-                <h3>Sample text</h3>
-            </div>
+
             <div class="direction controls">
                 <a href="prev" class="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
                 <a href="next" class="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -368,38 +464,20 @@ The chapter feature special contributions by Kailash Satyarthi, Activist and 201
                                 <div class="col-md-6 col-sm-12">
                                     <div class="flat-box">
                                         <div class="slideimg">
-                                           <img src="img/blogfeed/post-03.png" alt="Add alt tag"></a>
+                                           <img src="img/blogfeed/post-03.png" alt=""></a>
                                         </div>
-                                        <p class="blogroll-meta">An implied promise of the digital revolution was increased labour productivity, and higher pay. This does not seem to have happened. Productivity has not grown at the rates expected, and the gains have not translated into higher wages for the most part. As a result, inequalities among different [segments] of the society have gone up.</p>
+                                        <p class="blogroll-meta">An implied promise of the digital revolution was increased labour productivity, and higher pay. Nevertheless productivity has not grown at the rates expected, and the gains have not translated into higher wages for the most part. As a result, inequalities among different segments of the society have gone up.
+<br /><br />The Netherlands and the United States examples show increases in productivity and wages began to diverge in middle of the 1970s, and the gap has since been widening.
+</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
                                     <div class="flat-box">
                                         <div class="slideimg">
-                                        <img src="img/blogfeed/post-04.png" alt="Add alt tag"></a>
+                                        <img src="img/blogfeed/post-04.png" alt=""></a>
                                         </div>
-                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">How about another post title then</a></h3>
-                                        <p class="blogroll-meta">Posted: June 2014, in Design News</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="col-md-6 col-sm-12">
-                                    <div class="flat-box">
-                                        <div class="slideimg">
-                                            <a href="post.html" title="Add Title"><img src="img/blogfeed/post-05.jpg" alt="Add alt tag"></a>
-                                        </div>
-                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">And lastly a fourth post title</a></h3>
-                                        <p class="blogroll-meta">Posted: June 2014, in Design News</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12">
-                                    <div class="flat-box">
-                                        <div class="slideimg">
-                                            <a href="post.html" title="Add Title"><img src="img/blogfeed/post-06.jpg" alt="Add alt tag"></a>
-                                        </div>
-                                        <h3 class="slidetitle"><a href="post.html" title="Post Title">And lastly a fourth post title</a></h3>
-                                        <p class="blogroll-meta">Posted: June 2014, in Design News</p>
+                                        <p class="blogroll-meta">In the United States productivity gains in manufacturing have been almost 75 percent through 2013 and wages increases of less than 10 percent.
+</p>
                                     </div>
                                 </div>
                             </li>
@@ -540,11 +618,11 @@ The chapter feature special contributions by Kailash Satyarthi, Activist and 201
               </h4>
             </div>
             <div id="collapseThree" class="panel-collapse collapse">
-              <div class="panel-body">
+              <div class="panel-body"><p>
                 Men dominate the world of paid work, women the world of unpaid work. Of the 59 percent of work that is paid, mostly outside the home, men’s share is nearly twice that of women—38 percent versus 21 percent. The picture is reversed for unpaid work, mostly within the home and encompassing a range of care responsibilities: of the 41 percent of work that is unpaid, women perform three times more than men—31 percent versus 10 percent. <br /><br />
 In the realm of paid work, women are engaged in the workforce less than men, their work tends to be more vulnerable (globally half of employed women are in vulnerable jobs) and they are under-represented in senior management (in businesses, women represent only 22 percent of senior managers.), reinforcing disadvantages. In the realm of unpaid work, women share more of the care burden (undertaking more childcare, care for elders and those with disabilities), which limits their options, discretionary free time and access to social pensions. <br /><br />
 The report calls for reducing the burden of unpaid care work, expanding opportunities for women to engage in paid work. Outcomes could be improved by equal pay, flexible work, greater social protection, parental leave and addressing harassment and social norms that exclude women from work. There is also a need for valuing unpaid care work for advocacy and policy purposes.<br /><br />
-The chapter features special contribution by Roza Otunbayeva, Former President of Kyrgyzstan.  <br />
+The chapter features special contribution by Roza Otunbayeva, Former President of Kyrgyzstan.</p>  <br />
               </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <a href="http://hdr.undp.org/sites/default/files/chapter4.pdf" target="_blank"><button type="button" class="btn btn-success btn-block">Download Chapter 4 <img src="img/text-download.png"  alt="Download Chapter 4"></button></a><br />
@@ -559,7 +637,7 @@ The chapter features special contribution by Roza Otunbayeva, Former President o
         <section id="five" class="container wow fadeInUp" data-wow-delay="0.5s">
             <div class="row padding">
                 <div class="col-xs-12">
-                    <blockquote class="bigtext">Chapter 5: Moving to sustainable work</blockquote>
+                    <h2>Chapter 5: Moving to sustainable work</h2>
                     <hr class="mini">
                     <p>Sustainable work refers to work that promotes human development while ensuring sustainability. It is critical not only for sustaining the planet, but also for ensuring work for future generations. <br /><br />
 Some occupations can be expected to loom larger—railway technicians, for instance, as countries invest in mass transit systems. Terminated workers may predominate in sectors that draw heavily on natural resources or emit greenhouse gases or other pollutants. About 50 million people are employed globally in such sectors (7 million in coal mining, for example). <br /><br />
@@ -593,12 +671,12 @@ Infographic below explains effects of work on environmental sustainability and h
               </h4>
             </div>
             <div id="collapseFour" class="panel-collapse collapse">
-              <div class="panel-body">
+              <div class="panel-body"><p>
                The Sustainable Development Goals (SDGs) have implications for sustainable work and sustainable work is also critical for achieving the SDGs. SDG with the most direct implications for sustainable work is goal 8 (promote sustained, inclusive and sustainable economic growth, full and productive employment, and decent work for all), and its associated targets which spell out some of the implications for sustainable work. <br /><br />
 Target 8.7, for example, is to take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including the recruitment and use of child soldiers, and by 2025 end child labour in all its forms. <br /><br />
 Target 8.8—to protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment—aims to strengthen the human development outcomes of workers, avoiding a race to the bottom. <br /><br />
 Similarly, sustainable work is also crucial for achieving the SDGs as it contributes to poverty elimination, ending hunger,  promoting sustained, inclusive and sustainable economic growth and so on.  
-The chapter features special contributions by Maithripala Sirisena, President of Sri Lanka and Nohra<br /><br /> Padilla, Director of the National Association of Recyclers (Colombia) and of the Association of Recyclers of Bogota, Recipient of the Goldman Environmental Prize in 2013. <br />
+The chapter features special contributions by Maithripala Sirisena, President of Sri Lanka and Nohra<br /><br /> Padilla, Director of the National Association of Recyclers (Colombia) and of the Association of Recyclers of Bogota, Recipient of the Goldman Environmental Prize in 2013. <br /></p>
 
               </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
@@ -645,9 +723,9 @@ The Interactive visualization below explores clusters of policy recommendations.
               </h4>
             </div>
             <div id="collapseFive" class="panel-collapse collapse">
-              <div class="panel-body">
+              <div class="panel-body"><p>
                 Societies can turn challenges caused by changes in the world of work into opportunities that would enhance human development. The report recommends work which enables people to find employment opportunities without damaging prospects for future generations. The report suggests investing in energy efficient technologies, prioritising ethical consumption and investment and enhancing skills development, creativity, entrepreneurship and problem solving among a workforce. The Report also calls for national employment strategies, dual targeting by central banks, employment-led growth rather growth-lead growth strategies, a living income and profit sharing by workers.<br /><br />
-The chapter features special contribution by Benigno S. Aquino III, President of the Philippines. 
+The chapter features special contribution by Benigno S. Aquino III, President of the Philippines. </p>
   <br />
 
               </div>
@@ -666,13 +744,13 @@ The chapter features special contribution by Benigno S. Aquino III, President of
         <section id="annex" class="container wow fadeInUp" data-wow-delay="0.5s">
             <div class="row padding">
                 <div class="col-xs-12">
-                    <h2 class="centertext">Statistical annex
+                    <h2>Statistical annex
 </h2>
-                    <hr class="title">
+                    <hr class="mini">
                     <p>The report features 16 statistical tables in the annex as well as the statistical tables following chapters 2, 4 and 6 provide an overview of key aspects of human development. The first seven tables contain the family of composite human development indices and their components estimated by the HDRO. The remaining tables present a broader set of indicators related to human development.<br /><br />
             <div class="row">
               <div class="col-md-3 col-sm-6 col-xs-12">
-                <button type="button" class="btn btn-info btn-block">Statistical Tables</button>
+                  <a href="http://hdr.undp.org/sites/default/files/hdr_2015_statistical_annex.pdf"  target="_blank"><button type="button" class="btn btn-info btn-block">Statistical Annex</button></a>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <a href="http://hdr.undp.org/en/system/files/hdr2015_technical_notes.pdf"  target="_blank"><button type="button" class="btn btn-warning btn-block">Technical Notes</button></a>
@@ -680,9 +758,12 @@ The chapter features special contribution by Benigno S. Aquino III, President of
               <div class="col-md-3 col-sm-6 col-xs-12">
                 <a href="http://hdr.undp.org/en/faq-page" target="_blank"><button type="button" class="btn btn-default btn-block">FAQ's</button></a>
               </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <a href="http://hdr.undp.org/sites/default/files/ranking.pdf" target="_blank"><button type="button" class="btn btn-success btn-block">HDI Rankings by Country</button></a>
+              </div>
             </div>
 <br />
-Unless otherwise specified in the notes, tables use data available to the HDRO as of 15 April 2015. All indices and indicators, along with technical notes on the calculation of composite indices and additional source information, are available online at <a href="http://hdr.undp.org/en/data" target="_blank">http://hdr.undp.org/en/data</a>.<br /><br />
+<p>Unless otherwise specified in the notes, tables use data available to the HDRO as of 15 April 2015. All indices and indicators, along with technical notes on the calculation of composite indices and additional source information, are available online at <a href="http://hdr.undp.org/en/data" target="_blank">http://hdr.undp.org/en/data</a>.<br /><br />
 Countries and territories are ranked by 2014 Human Development Index (HDI) value. Robustness and reliability analysis has shown that for most countries the differences in HDI are not statistically significant at the fourth decimal place. For this reason countries with the same HDI value at three decimal places are listed with tied ranks.<br />
 </p>
                 </div>
@@ -691,26 +772,7 @@ Countries and territories are ranked by 2014 Human Development Index (HDI) value
 
 <!-- ============================ Statistical annex End ============================== -->
 
-        <!-- ============================ Section ten: full-width image ============================ -->
 
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 element-img" style="background-image: url('img/sketch.jpg'); height: 500px">
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================ Section eleven: blockquote ============================ -->
-
-        <section class="container-fluid white padding">
-            <div class="row">
-                <div class="col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-                    <blockquote class="bigtext">We were startled by her beauty, and stood in ore at her glowing radiance.</blockquote>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================ Section fourteen: testimonials ============================ -->
 
 
 
@@ -721,7 +783,7 @@ Countries and territories are ranked by 2014 Human Development Index (HDI) value
                 <div class="row">
                     <div class="col-xs-12">
                         <a href="http://hdr.undp.org/en" title="Human Development Report Office"><img src="img/f-logo.png" ></a>
-                        <p>"Work for Human Development"</p>
+                        <p><span style="color:#1bbc1b">"Human Development Report 2015: Work for Human Development"</span></p>
                         <small>&copy; Copyright 2015 HDRO</small>
                         <hr class="mini central light-grey-dk">
                     </div>
@@ -747,7 +809,9 @@ Countries and territories are ranked by 2014 Human Development Index (HDI) value
     <script src="js/nv.d3.js"></script><!-- Chapter 4 -->
     <script src="js/bootstrap-multiselect.js"></script><!-- Chapter 4 -->
     <script src="js/chapter4_chart.js" defer></script><!-- Chapter 4 -->
-
+    <script src="js/snap.svg-min.js"></script><!-- SNAP SVG for svg animations -->
+    <script src="js/custom-animations.js"></script><!-- Merix custom animations -->
+    <script src="js/intro-animation.js"></script><!-- Merix custom animations -->
     <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
 
     <!-- Page-specific JS functions - these are functions that only occur on this specific page, so we DON'T want these placed in our scripts.js file as this file is loaded on every page for global site functions.  -->

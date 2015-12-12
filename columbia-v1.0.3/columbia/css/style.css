@@ -208,9 +208,9 @@ p, p a {
   font-style: normal;
   font-weight: 400;
   margin: 0 0 10px;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: -1px;
-  line-height: 36px;
+  line-height: 30px;
   color: #777;
 }
 
@@ -932,6 +932,13 @@ a.scrollto {
   -o-animation-duration: .4s;
   animation-duration: .4s;
 }
+.intro1 {
+  -webkit-animation-duration: .4s;
+  -moz-animation-duration: .4s;
+  -ms-animation-duration: .4s;
+  -o-animation-duration: .4s;
+  animation-duration: .4s;
+}
 
 .media {
   -webkit-animation-duration: .4s;
@@ -956,7 +963,7 @@ a.scrollto {
   bottom: 0;
   top: 0;
   z-index: 1040;
-  background-image: url(https://s3.amazonaws.com/report.hdr.undp.org/img/nav-bar.jpg);
+  background-image: url(http://s3.amazonaws.com/report.hdr.undp.org/img/nav-bar.png);
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -970,7 +977,7 @@ a.scrollto {
     top: 0;
     width: 100%;
     margin-left: 0;
-    background-image: url(https://s3.amazonaws.com/report.hdr.undp.org/img/nab-bar-mobile.jpg);
+    background-image: url(http://s3.amazonaws.com/report.hdr.undp.org/img/nab-bar-mobile.jpg);
     height: 65px
   }
 }
@@ -1183,8 +1190,9 @@ header#pagemeta hr.mini {
   top: 10;
   left: 0;
   display: table;
-  width: 150px;
+  width: 90px;
   z-index: 0;
+  padding-bottom: 100px;
 }
 #bullets ul {
   padding-left: 0;
@@ -1198,7 +1206,7 @@ header#pagemeta hr.mini {
   border-color: transparent;
   width: 14px;
   height: 14px;
-  margin: 14px auto;
+  margin: 15px auto;
   -webkit-border-radius:100%;
   -moz-border-radius: 100%;
   border-radius:100%;
@@ -2316,7 +2324,7 @@ h4.tags {
 
 footer {
   text-align: center;
-  background-color: #444
+  background-color: #fff
 }
 
 footer .padding {

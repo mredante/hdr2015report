@@ -67,6 +67,9 @@ $(document).ready(function($) {
         wrap.css({
             "width": window1.width()
         });
+
+        // Call resizeIntroAnimation
+        window.resizeIntroAnimation && window.resizeIntroAnimation();
     };
 
     resizeWrapper();
@@ -74,7 +77,6 @@ $(document).ready(function($) {
     $(window).resize(function () {
         resizeWrapper();
     });
-
 
     // Flyup animation for main menu items
     // Combine with time delays, as seen between lines 767-860 in the theme stylesheet, (style.css)
