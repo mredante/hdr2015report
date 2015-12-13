@@ -190,3 +190,32 @@
                 transform: scale(1.0) rotate(-360deg);
     }
 }
+/* adding in css that's hard-coded and not working for custom animations */
+#text1072{
+  fill:#373535;
+  font-family:Vollkorn, Georgia, serif;
+  font-size:22.5px;
+  font-stretch:condensed;
+  font-weight:bold;
+}
+#text68{
+  fill:#373535;
+  font-family:Vollkorn, Georgia, serif;
+  font-size:26px;
+  font-stretch:condensed;
+  font-weight:bold;
+}
+#text36{
+  fill:#373535;
+  font-family:Vollkorn, Georgia, serif;
+  font-size:22px;
+  font-stretch:condensed;
+  font-weight:bold;
+}
+#text40,#text40-7{
+  fill:#373535;
+  font-family:Vollkorn, Georgia, serif;
+  font-size:13px;
+  font-stretch:condensed;
+  font-weight:bold;
+}
