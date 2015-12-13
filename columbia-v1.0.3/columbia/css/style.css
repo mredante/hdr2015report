@@ -1243,12 +1243,17 @@ header#pagemeta hr.mini {
   transition: border .3s linear;
 }
 
-#bullets ul li.current-page-item a{
- color: #6a6a6a
+#bullets ul li.secondary-navigation a{
+ color: #5a96e6
 }
 
-#bullets ul li.current-page-item {
-  color: #6a6a6a
+#bullets ul li.secondary-navigation {
+  color: #5a96e6
+}
+
+}
+#secondary-navigation {
+    color:#5a96e6
 }
 
 #bullets ul li:hover {
