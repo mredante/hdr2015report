@@ -436,6 +436,16 @@ iframe {
 
 @media (min-width: 992px) {
   .container {
+    /* make container 800px for smaller screens like iPad landscape. You'll have
+       to take a look at the images in Chapter 5 & 6, because they are not 
+       yet displayed good at this sceen size (between 992px and 1192px wide) */
+    width: 800px;   
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1192px) {
+  .container {
     width: 1000px;
     padding-left: 0;
     padding-right: 0;
@@ -963,7 +973,9 @@ a.scrollto {
   bottom: 0;
   top: 0;
   z-index: 1040;
-  background-image: url(http://s3.amazonaws.com/report.hdr.undp.org/img/nav-bar.png);
+  /*background-image: url(http://s3.amazonaws.com/report.hdr.undp.org/img/nav-bar.png);*/
+  /* To prevent the background image to repeat with larger screens */
+  background: #BAD699 url(http://s3.amazonaws.com/report.hdr.undp.org/img/nav-bar.png) top left no-repeat;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
